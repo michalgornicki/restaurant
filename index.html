@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+<!-- BOOTSTRAP CDN AND CUSTOMISED CSS LINKS -->
+
+
+<link rel="stylesheet" href="style.css">
+<link href='http://fonts.googleapis.com/css?family=Andada&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<meta charset="utf-8">
+<title></title>
+  </head>
+  <body>
+
+    <div id="navbar">
+
+      <a href="#image1"><img id="home-button" src="home.png" alt="" onclick=closeMenu()></a>
+      <img id="burger-button" src="menu.png" alt="" onclick=openMenu()>
+      <img id="close-button" src="close.png" alt="" onclick=closeMenu()>
+
+
+      <ul id="desktop-navbar-elements">
+        <li id="logo-desktop"><img id="logo-image" src="logo.png" alt="">Royal Cookery</li>
+        <li id="about-desktop" class="">O nas</li>
+        <a href="#header-contact"><li id="contact-desktop" class="">Kontakt i rezerwacja</li></a>
+        <a href="menu/index.html"><li id="menu-desktop">Menu</li></a>
+      </ul>
+
+    </div>
+
+       <div id="mobile-sliding-menu">
+
+       <ul id="mobile-menu-elements">
+         <li onclick=closeMenu()><a class="" href="#container1">O NAS</a></li>
+         <li onclick=closeMenu()><a class="" href="#transparent-container-long">KONTAKT/REZERWACJA</a></li>
+         <li onclick=closeMenu()><a href="menu/index.html">MENU</a></li>
+
+       </ul>
+
+       </div>
+
+<div class="content">
+
+  <img id="nightday-mode" src="daynight.png" alt="" onclick="nightMode()">
+
+
+
+  <div class="container-image-gap" id="image1">
+
+    <div class="restaurant-name-wrap " id="restaurant-title">RESTAURACJA</div>
+    <div class= "restaurant-name-wrap" id="restaurant-name">Royal Kitchen</div>
+
+  </div>
+
+  <div class="container" id="container1"  data-aos="zoom-out" data-aos-duration="1500">
+
+    <img src="collage1.jpg" alt="" id="photo1small" data-aos="fade-in" data-aos-anchor-placement="bottom-bottom">
+    <img src="collage2.jpg" alt="" id="photo2small" data-aos="fade-in" data-aos-anchor-placement="bottom-bottom">
+    <img src="collage3.jpg" alt="" id="photo3small" data-aos="fade-in" data-aos-anchor-placement="bottom-bottom">
+
+    <div class="header " data-aos="fade-in"  data-aos-anchor-placement="bottom-bottom" data-aos-offset="100" data-aos-duration="1500">O NAS</div>
+    <div class="footer " data-aos="fade-in" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1500">
+      Restauracja ROYAL KITCHEN mieści się w zacisznym zakątku ul. Złotniczej i graniczy z parkiem Marii Skłodowskiej-Curie, na który mamy widok z okien.
+      To jedno z najbardziej wykwintnych miejsc na kulinarnej mapie Pomorza. Jesteśmy z Wami już ponad 50 lat.
+    </div>
+    <img id="photo1" src="collage4.jpg" alt="" data-aos="fade-in" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1500">
+
+  </div>
+
+  <div class="container-image-gap" id="image2"></div>
+
+  <div class="container" data-aos="zoom-out" data-aos-duration="1500">
+
+    <img id="photo3" src="medium1.jpg" alt="" data-aos="fade-in" data-aos-anchor-placement="center-bottom">
+
+    <div class="alt-header " data-aos="fade-in"  data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">OFERTA</div>
+
+
+  <ul id="meals"data-aos="fade-in" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
+    <li class="meals-item"><div id="list-beginning" class="">W naszych klimatycznych pomieszczeniach możesz znaleźć:</div></li>
+    <li class="meals-item ">&check; <b>sezonowe</b> menu</li>
+    <li class="meals-item ">&check; dania <b>wegeteriańskie</b></li>
+    <li class="meals-item ">&check; warzywa i owoce od <b>sprawdzonych dostawców</b></li>
+    <li class="meals-item ">&check; <b>regionalne</b> potrawy</li>
+    <li class="meals-item ">&check; menu <b>dla dzieci</b></li>
+  </ul>
+
+
+
+  </div>
+
+<div class="container-image-gap" id="image3"></div>
+
+<div class="container" data-aos="zoom-out" data-aos-duration="1500">
+
+  <img src="4small.jpg" alt="" id="photo4small" data-aos="fade-in" data-aos-anchor-placement="bottom-bottom">
+  <img src="5small.jpg" alt="" id="photo5small" data-aos="fade-in" data-aos-anchor-placement="bottom-bottom">
+  <img src="6small.jpg" alt="" id="photo6small" data-aos="fade-in" data-aos-anchor-placement="bottom-bottom">
+
+  <div class="header header-top" data-aos="fade-in" data-aos-offset="200">MENU</div>
+  <div class="footer footer-top footer-wide " data-aos="fade-in" data-aos-offset="200" data-aos-duration="1500">Nasza kuchnia opiera się na polskich smakach, wspaniałych warzywach i owocach i dbałości o każdy detal naszych potraw. </br> </br>
+    Zapraszamy do naszej à la carte.</div>
+  <img id="photo2" src="medium2.jpg" alt=""  data-aos="fade-in" data-aos-anchor-placement="center-bottom">
+  <a href="menu/index.html"><div id="button-menu" class="" data-aos="fade-in" data-aos-offset="0">ZOBACZ MENU</div></a>
+
+</div>
+
+  <div class="container-image-gap" id="image4"></div>
+
+  <div class="container" data-aos="zoom-out" data-aos-duration="1500">
+
+    <div id="header-contact" class="" data-aos="fade-in" data-aos-offset="100" data-aos-anchor-placement="bottom-bottom">KONTAKT</div>
+    <div class="reservation">
+
+      <img id="photo4" src="medium3.jpg" alt=""  data-aos="fade-in" data-aos-anchor-placement="center-bottom">
+
+    <ul id="contact-list">
+      
+      <li data-aos="fade-in" data-aos-offset="100" data-aos-anchor-placement="bottom-bottom" data-aos-duration="700" class=" open-hours">Godziny otwarcia:</li>
+      <li data-aos="fade-in" data-aos-offset="100" data-aos-anchor-placement="bottom-bottom" data-aos-duration="700" class=""><span class="brown-font">Pon. - Pt.:</span> od 14:00 do 21:00 </li>
+      <li data-aos="fade-in" data-aos-offset="100" data-aos-anchor-placement="bottom-bottom" data-aos-duration="700" class=""><span class="brown-font">Sob. - Nd.:</span> od 11:30 do 21:00 </li>
+      <li data-aos="fade-in" data-aos-offset="100" data-aos-anchor-placement="bottom-bottom" data-aos-duration="700"><div id="address">ul. Złota 45, Stare Miasto, 02-265 Lublin</div></li>
+      <li data-aos="fade-in" data-aos-offset="100" data-aos-anchor-placement="bottom-bottom" data-aos-duration="700" class=""><span class="brown-font">Tel:</span> (+48) 662 047 277</li>
+      <li data-aos="fade-in" data-aos-offset="100" data-aos-anchor-placement="bottom-bottom" data-aos-duration="700"><span class="brown-font">e-mail:</span> rezerwacja@royalkitchen.com.pl</li>
+      <li data-aos="fade-in" data-aos-offset="100" data-aos-anchor-placement="bottom-bottom" data-aos-duration="700"><div id="map-subtitle" class="" data-aos="fade-in" data-aos-offset="100" data-aos-anchor-placement="bottom-bottom">Łatwy dojazd i bezpłatny parking.</div></li>
+    </ul>
+
+    </div>
+
+    <div><iframe width="600" height="500" id="map" src="https://maps.google.com/maps?q=lublin%20z%C5%82ota%2014&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://putlocker-is.org"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://google-map-generator.com"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div>
+
+
+
+  </div>
+
+</div>
+
+
+<!-- JQUERY, POPPER.JS AND JS BOOTSTRAP CDNS -->
+    <script src="myScript.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init({
+      offset: 0,
+      once: false,
+    });
+  </script>
+  </body>
+</html>
