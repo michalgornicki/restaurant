@@ -478,8 +478,47 @@ a{
   #image1{
     position: relative;
     height: 1080px;
+    width: 100%;
+    background-size: cover;
+    background-image: url(background1.jpg);
+    z-index: 2;
+    animation: 15s fadeOut forwards infinite;
+    animation-delay: 5s;
+  }
+
+  @keyframes fadeOut{
+    0% {filter: opacity(1);}
+    33% {filter: opacity(0);}
+    66% {filter: opacity(0);}
+    100% {filter: opacity(1);}
+  }
+
+  #image1b{
+    position: absolute;
+    height: 1080px;
+    width: 100%;
     top: 0px;
-    transition: 1.5s;
+    filter: opacity(1);
+    background-size: cover;
+    background-image: url(background1b.jpg);
+    background-color: rgb(190, 0, 0);
+    animation: 15s fadeOut forwards infinite;
+    animation-delay: 10s;
+    z-index: 1;
+  }
+
+  #image1c{
+    position: absolute;
+    height: 1080px;
+    width: 100%;
+    top: 0px;
+    filter: opacity(1);
+    background-size: cover;
+    background-image: url(background1c.jpg);
+    background-color: rgb(190, 0, 0);
+    animation: 15s fadeOut forwards infinite;
+    animation-delay: 15s;
+    z-index: 0;
   }
 
   .restaurant{
@@ -678,18 +717,20 @@ a{
   #button-menu1{
     position: absolute;
     left: 30%;
-    font-size: 2.5vmax;
+    font-size: 1.4vmax;
     text-align: center;
     color: white;
-    width: 14%;
-    padding: 10px;
-    margin-left: 50px;
+    width: 12%;
+    padding: 12px;
+    padding-left: 30px;
+    padding-right: 30px;
     top: 600px;
     display: inline-block;
     background: linear-gradient(45deg, rgb(252, 223, 193), rgb(193, 124, 53));
     transition: 0.3s;
     box-shadow: 10px 5px 20px 0px black;
     border: outset 7px rgb(252, 223, 193);
+    z-index: 3;
   }
 
   #button-menu1:active{
@@ -703,16 +744,19 @@ a{
     right: 30%;
     font-size: 2.5vmax;
     text-align: center;
+    font-size: 1.4vmax;
     color: white;
-    width: 14%;
-    padding: 10px;
-    margin-left: 50px;
+    width: 12%;
+    padding: 12px;
+    padding-left: 30px;
+    padding-right: 30px;
     top: 600px;
     display: inline-block;
     background: linear-gradient(45deg, rgb(252, 223, 193), rgb(193, 124, 53));
     transition: 0.3s;
     box-shadow: 10px 5px 20px 0px black;
     border: outset 7px rgb(252, 223, 193);
+    z-index: 3;
   }
 
   #button-menu2:active{
