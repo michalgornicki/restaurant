@@ -44,12 +44,8 @@ function nightMode(){
   if (document.getElementById("container1").style.backgroundColor==="rgb(255, 245, 235)") {
   const darkMode =
   document.getElementById("nightday-mode").style.filter="saturate(1) opacity(1)";
-  document.getElementById("image1").classList.remove("backgroundFade");
-  document.getElementById("image1").classList.remove("backgroundFadeOff");
-  document.getElementById("image1").classList.add("backgroundFade");
-  document.getElementById("navbar").style.boxShadow="0px 0px 50px 0px rgb(167, 122, 76)";
+  document.getElementById("navbar").style.boxShadow="0px 0px 50px rgb(228, 149, 2)";
   setTimeout(function(){
-    document.getElementById("image1").classList.add("backgroundFadeOff");
     document.getElementsByClassName("container")[0].style.backgroundColor="rgb(110, 95, 80)";
     document.getElementsByClassName("container")[1].style.backgroundColor="rgb(110, 95, 80)";
     document.getElementsByClassName("container")[2].style.backgroundColor="rgb(110, 95, 80)";
@@ -66,15 +62,14 @@ function nightMode(){
     document.getElementById("list-beginning").style.color="rgb(255, 255, 255)";
     document.getElementById("contact-list").style.color="rgb(255, 255, 255)";
     document.getElementById("map-subtitle").style.color="rgb(255, 255, 255)";
-    document.getElementById("photo1").style.outline="inset 30px rgb(154, 133, 110)";
-    document.getElementById("photo2").style.outline="inset 30px rgb(154, 133, 110)";
-    document.getElementById("photo3").style.outline="inset 30px rgb(154, 133, 110)";
-    document.getElementById("photo4").style.outline="inset 30px rgb(154, 133, 110)";
-    document.getElementById("map").style.border="ridge 30px rgb(154, 133, 110)";
-    document.getElementById("image1").style.backgroundImage="url(background1night.jpg)";
-    document.getElementById("photo1small").style.outline="inset 30px rgb(154, 133, 110)";
-    document.getElementById("photo2small").style.outline="inset 30px rgb(154, 133, 110)";
-    document.getElementById("photo3small").style.outline="inset 30px rgb(154, 133, 110)";
+    document.getElementById("photo1").style.outline="inset 10px rgb(154, 133, 110)";
+    document.getElementById("photo2").style.outline="inset 10px rgb(154, 133, 110)";
+    document.getElementById("photo3").style.outline="inset 10px rgb(154, 133, 110)";
+    document.getElementById("photo4").style.outline="inset 10px rgb(154, 133, 110)";
+    document.getElementById("map").style.border="ridge 10px rgb(154, 133, 110)";
+    document.getElementById("photo1small").style.outline="inset 10px rgb(154, 133, 110)";
+    document.getElementById("photo2small").style.outline="inset 10px rgb(154, 133, 110)";
+    document.getElementById("photo3small").style.outline="inset 10px rgb(154, 133, 110)";
     document.getElementsByClassName("reservation")[0].style.color="rgb(255, 255, 255)";
     document.getElementById("map-subtitle").style.color="rgb(255, 255, 255)";
     document.getElementsByClassName("open-hours")[0].style.borderBottom="2px inset rgb(252, 223, 193)";
@@ -88,11 +83,8 @@ function nightMode(){
   else {
   const lightMode =
   document.getElementById("nightday-mode").style.filter="saturate(0) opacity(0.5)";
-  document.getElementById("image1").classList.remove("backgroundFade");
-  document.getElementById("image1").classList.remove("backgroundFadeOff");
-  document.getElementById("image1").classList.add("backgroundFade");
+  document.getElementById("navbar").style.boxShadow="0px 0px 0px rgb(228, 149, 2)";
   setTimeout(function(){
-    document.getElementById("image1").classList.add("backgroundFadeOff");
     document.getElementsByClassName("container")[0].style.backgroundColor="rgb(255, 245, 235)";
     document.getElementsByClassName("container")[1].style.backgroundColor="rgb(255, 245, 235)";
     document.getElementsByClassName("container")[2].style.backgroundColor="rgb(255, 245, 235)";
@@ -109,15 +101,14 @@ function nightMode(){
     document.getElementById("list-beginning").style.color="rgb(74, 74, 74)";
     document.getElementById("contact-list").style.color="rgb(74, 74, 74)";
     document.getElementById("map-subtitle").style.color="rgb(74, 74, 74)";
-    document.getElementById("photo1").style.outline="inset 30px rgb(252, 223, 193)";
-    document.getElementById("photo2").style.outline="inset 30px rgb(252, 223, 193)";
-    document.getElementById("photo3").style.outline="inset 30px rgb(252, 223, 193)";
-    document.getElementById("photo4").style.outline="inset 30px rgb(252, 223, 193)";
-    document.getElementById("map").style.border="ridge 30px rgb(252, 223, 193)";
-    document.getElementById("image1").style.backgroundImage="url(1.jpg)";
-    document.getElementById("photo1small").style.outline="inset 30px rgb(252, 223, 193)";
-    document.getElementById("photo2small").style.outline="inset 30px rgb(252, 223, 193)";
-    document.getElementById("photo3small").style.outline="inset 30px rgb(252, 223, 193)";
+    document.getElementById("photo1").style.outline="inset 10px rgb(252, 223, 193)";
+    document.getElementById("photo2").style.outline="inset 10px rgb(252, 223, 193)";
+    document.getElementById("photo3").style.outline="inset 10px rgb(252, 223, 193)";
+    document.getElementById("photo4").style.outline="inset 10px rgb(252, 223, 193)";
+    document.getElementById("map").style.border="ridge 10px rgb(252, 223, 193)";
+    document.getElementById("photo1small").style.outline="inset 10px rgb(252, 223, 193)";
+    document.getElementById("photo2small").style.outline="inset 10px rgb(252, 223, 193)";
+    document.getElementById("photo3small").style.outline="inset 10px rgb(252, 223, 193)";
     document.getElementsByClassName("reservation")[0].style.color="rgb(255, 245, 235)";
     document.getElementById("map-subtitle").style.color="rgb(255, 245, 235)";
     document.getElementsByClassName("open-hours")[0].style.borderBottom="2px inset rgb(189, 85, 0)";
@@ -130,7 +121,3 @@ function nightMode(){
 }
 
 
-style.backgroundColor="rgb(255, 245, 235)";
-style.border="inset rgb(252, 223, 193) 30px";
-("footer")[0].style.color="rgb(74, 74, 74)";
-("header")[0].style.color="rgb(158, 0, 0)";
