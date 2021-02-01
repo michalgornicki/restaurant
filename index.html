@@ -14,12 +14,7 @@
   </head>
   <body>
 
-    <div id="navbar">
-
-      <a href="#image1"><img id="home-button" src="home.png" alt="" onclick=closeMenu()></a>
-      <img id="burger-button" src="menu.png" alt="" onclick=openMenu()>
-      <img id="close-button" src="close.png" alt="" onclick=closeMenu()>
-
+    <div id="navbar"  data-aos="fade-down" data-aos-duration="2500">
 
       <ul id="desktop-navbar-elements">
         <li id="logo-desktop"><img id="logo-image" src="logo.png" alt="">Royal Cookery</li>
@@ -29,17 +24,6 @@
       </ul>
 
     </div>
-
-       <div id="mobile-sliding-menu">
-
-       <ul id="mobile-menu-elements">
-         <li onclick=closeMenu()><a class="" href="#container1">O NAS</a></li>
-         <li onclick=closeMenu()><a class="" href="#transparent-container-long">KONTAKT/REZERWACJA</a></li>
-         <li onclick=closeMenu()><a href="menu/index.html">MENU</a></li>
-
-       </ul>
-
-       </div>
 
 <div class="content">
 
@@ -51,16 +35,9 @@
   <div class="container-image-gap" id="image1b"></div>
   <div class="container-image-gap" id="image1c"></div>
 
-    <div class="restaurant-name-wrap " id="restaurant-title">RESTAURACJA</div>
-    <div class= "restaurant-name-wrap" id="restaurant-name">Royal Kitchen</div>
+  <div class="container" id="container1"  data-aos="fade-up" data-aos-duration="1500">
 
-  
-
-  <div class="container" id="container1"  data-aos="zoom-out" data-aos-duration="1500">
-
-    <img src="collage1.jpg" alt="" id="photo1small" data-aos="fade-in" data-aos-anchor-placement="bottom-bottom">
-    <img src="collage2.jpg" alt="" id="photo2small" data-aos="fade-in" data-aos-anchor-placement="bottom-bottom">
-    <img src="collage3.jpg" alt="" id="photo3small" data-aos="fade-in" data-aos-anchor-placement="bottom-bottom">
+    
 
     <div class="header " data-aos="fade-in"  data-aos-anchor-placement="bottom-bottom" data-aos-offset="100" data-aos-duration="1500">O NAS</div>
     <div class="footer " data-aos="fade-in" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1500">
@@ -69,11 +46,16 @@
     </div>
     <img id="photo1" src="collage4.jpg" alt="" data-aos="fade-in" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1500">
 
+    <img src="collage1.jpg" alt="" id="photo1small" data-aos="fade-in" data-aos-anchor-placement="bottom-bottom">
+    <img src="collage2.jpg" alt="" id="photo2small" data-aos="fade-in" data-aos-anchor-placement="bottom-bottom">
+    <img src="collage3.jpg" alt="" id="photo3small" data-aos="fade-in" data-aos-anchor-placement="bottom-bottom">
+
+
   </div>
 
-  <div class="container-image-gap" id="image2"></div>
+  <div class="container-image-gap" id="image2"  data-aos="fade-up" data-aos-duration="1500"></div>
 
-  <div class="container" data-aos="zoom-out" data-aos-duration="1500">
+  <div class="container" data-aos="fade-up" data-aos-duration="1500">
 
     <img id="photo3" src="medium1.jpg" alt="" data-aos="fade-in" data-aos-anchor-placement="center-bottom">
 
@@ -93,25 +75,25 @@
 
   </div>
 
-<div class="container-image-gap" id="image3"></div>
+<div class="container-image-gap" id="image3"  data-aos="fade-up" data-aos-duration="1500"
+></div>
 
-<div class="container" data-aos="zoom-out" data-aos-duration="1500">
+<div class="container" data-aos="fade-up" data-aos-duration="1500">
 
 
   <div class="header header-top" data-aos="fade-in" data-aos-offset="200">MENU</div>
-  <div class="footer footer-top footer-wide " data-aos="fade-in" data-aos-offset="200" data-aos-duration="1500">Nasza kuchnia opiera się na polskich smakach, wspaniałych warzywach i owocach i dbałości o każdy detal naszych potraw. </br> </br>
+  <div class="footer footer-top footer-wide" data-aos="fade-in" data-aos-offset="200" data-aos-duration="1500">Nasza kuchnia opiera się na polskich smakach, wspaniałych warzywach i owocach i dbałości o każdy detal naszych potraw. </br> </br>
     Zapraszamy do naszej à la carte.</div>
   <img id="photo2" src="medium2.jpg" alt=""  data-aos="fade-in" data-aos-anchor-placement="center-bottom">
   <a href="menu/index.html"><div id="button-menu" class="" data-aos="fade-in" data-aos-offset="0">ZOBACZ MENU</div></a>
 
 </div>
 
-  <div class="container-image-gap" id="image4"></div>
+  <div class="container-image-gap" id="image4"  data-aos="fade-up" data-aos-duration="1500"></div>
 
-  <div class="container" data-aos="zoom-out" data-aos-duration="1500">
+  <div class="container" data-aos="fade-up" data-aos-duration="1500">
 
     <div id="header-contact" class="" data-aos="fade-in" data-aos-offset="100" data-aos-anchor-placement="bottom-bottom">KONTAKT</div>
-    <div class="reservation">
 
       <img id="photo4" src="medium3.jpg" alt=""  data-aos="fade-in" data-aos-anchor-placement="center-bottom">
 
@@ -125,8 +107,6 @@
       <li data-aos="fade-in" data-aos-offset="100" data-aos-anchor-placement="bottom-bottom" data-aos-duration="700"><span class="brown-font">e-mail:</span> rezerwacja@royalkitchen.com.pl</li>
       <li data-aos="fade-in" data-aos-offset="100" data-aos-anchor-placement="bottom-bottom" data-aos-duration="700"><div id="map-subtitle" class="" data-aos="fade-in" data-aos-offset="100" data-aos-anchor-placement="bottom-bottom">Łatwy dojazd i bezpłatny parking.</div></li>
     </ul>
-
-    </div>
 
     <div><iframe width="600" height="500" id="map" src="https://maps.google.com/maps?q=lublin%20z%C5%82ota%2014&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://putlocker-is.org"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://google-map-generator.com"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div>
 
