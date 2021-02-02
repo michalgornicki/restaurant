@@ -39,6 +39,8 @@ body, html{
     z-index: 2;
     margin-left: 5%;
     margin-right: 5%;
+    border-bottom: 2px solid rgb(230, 230, 230);
+    transition: 2s;
   }
 
   #navbar:hover{
@@ -50,18 +52,6 @@ body, html{
   a{
     text-decoration: none;
     color: white;
-  }
-
-  #burger-button{
-  display: none;
-  }
-
-  #close-button{
-  display: none;
-  }
-
-  #home-button{
-  display: none;
   }
 
   #image1{
@@ -177,6 +167,15 @@ body, html{
     width: 3%;
     top: 10px;
     right: 15px;
+    animation: 20s rotateLogo infinite;
+  }
+
+  @keyframes rotateLogo{
+    0% {transform: rotateY(0deg);}
+    40% {transform: rotateY(0deg);}
+    50% {transform: rotateY(180deg);}
+    90% {transform: rotateY(180deg);}
+    100% {transform: rotateY(0deg);}
   }
 
   .header{
@@ -227,28 +226,40 @@ body, html{
     border-bottom: 0px inset rgb(0, 0, 0);
     cursor: default;
     margin-left: 30%;
+    padding-bottom: 20px;
+    transition: 0.5s;
   }
   
   #about-desktop:hover{
     border-bottom: 3px inset rgb(187, 148, 108);
+    padding-bottom: 0px;
+    transition: 0.5s;
   }
   
   #menu-desktop{
     border-bottom: 0px inset rgb(0, 0, 0);
     margin-left: 3%;
+    padding-bottom: 20px;
+    transition: 0.5s;
   }
   
   #menu-desktop:hover{
     border-bottom: 3px inset rgb(187, 148, 108);
+    padding-bottom: 0px;
+    transition: 0.5s;
   }
   
   #contact-desktop{
     border-bottom: 0px inset rgb(0, 0, 0);
     margin-left: 3%;
+    padding-bottom: 20px;
+    transition: 0.5s;
   }
   
   #contact-desktop:hover{
     border-bottom: 3px inset rgb(187, 148, 108);
+    padding-bottom: 0px;
+    transition: 0.5s;
   }
 
   #photo3{
@@ -320,16 +331,21 @@ body, html{
     top: 600px;
     display: inline-block;
     background: linear-gradient(45deg, rgb(252, 223, 193), rgb(193, 124, 53));
-    transition: 0.3s;
+    transition: 1s;
     box-shadow: 10px 5px 20px 0px black;
     border: outset 7px rgb(252, 223, 193);
     z-index: 3;
+    filter:saturate(0.0);
   }
 
   #button-menu1:active{
     margin-top: 5px;
     box-shadow: 10px 5px 10px 0px black;
     transition: 0.2s;
+  }
+
+  #button-menu1:hover{
+    filter:saturate(1);
   }
 
   #button-menu2{
@@ -346,16 +362,21 @@ body, html{
     top: 600px;
     display: inline-block;
     background: linear-gradient(45deg, rgb(252, 223, 193), rgb(193, 124, 53));
-    transition: 0.3s;
+    transition: 1s;
     box-shadow: 10px 5px 20px 0px black;
     border: outset 7px rgb(252, 223, 193);
     z-index: 3;
+    filter:saturate(0.0);
   }
 
   #button-menu2:active{
     margin-top: 5px;
     box-shadow: 10px 5px 10px 0px black;
     transition: 0.2s;
+  }
+
+  #button-menu2:hover{
+    filter:saturate(1);
   }
 
   .reservation{
