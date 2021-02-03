@@ -26,18 +26,25 @@ html, body{
   }
   
   #navbar{
-    position: fixed;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
     width: 90%;
-    background: linear-gradient(0deg, rgb(252, 223, 193, 0.8), rgb(193, 124, 53, 0.8));
-    filter: opacity(0);
     top: 0px;
     left: 0px;
     z-index: 2;
     margin-left: 5%;
     margin-right: 5%;
     border-bottom: 2px solid rgb(230, 230, 230);
+    height: 13vmin;
+    box-shadow: 0px 0px 0px rgb(228, 149, 2);
+    transition: 2s;
   }
 
+  #navbar:hover{
+    background: none;
+    background-color: rgba(0, 0, 0, 1);
+    transition: 1.5s;
+  }
 
   
   a{
@@ -45,11 +52,10 @@ html, body{
     color: white;
   }
   
-  #meals{
+  #footer-list{
     position: relative;
-    font-size: 50px;
     transition: 1.3s;
-    padding-bottom: 200px;
+    padding-top: 50px;
     color: rgb(70, 69, 69);
   }
   
@@ -61,13 +67,6 @@ html, body{
     color: rgb(70, 69, 69);
     margin-right: 100px;
   }
-  
-  #meals>li{
-    font-size: 42px;
-    padding-bottom: 50px;
-    list-style: none;
-    margin-right: 50px;
-  }
 
   .container{
     border: inset 5vmax rgb(119, 60, 26);
@@ -75,26 +74,13 @@ html, body{
     background-color: rgb(255, 245, 235);
     height: auto;
     padding-bottom: 100px;
+    overflow: hidden;
   }
-  
-  #navbar{
-    position: absolute;
-    background: none;
-    background-color: rgba(0, 0, 0, 0.4);
-    height: 13vmin;
-    box-shadow: 0px 0px 0px rgb(228, 149, 2);
-    transition: 2s;
-  }
-  
-  #navbar:hover{
-    background: none;
-    background-color: rgba(0, 0, 0, 1);
-    transition: 1.5s;
-  }
+
   
   #image1{
     position: relative;
-    height: 1080px;
+    height: 100vmin;
     width: 100%;
     background-size: cover;
     background-image: url(background1d.jpg);
@@ -112,7 +98,7 @@ html, body{
 
   #image1b{
     position: absolute;
-    height: 1080px;
+    height: 100vmin;
     width: 100%;
     top: 0px;
     filter: opacity(1);
@@ -126,7 +112,7 @@ html, body{
 
   #image1c{
     position: absolute;
-    height: 1080px;
+    height: 100vmin;
     width: 100%;
     top: 0px;
     filter: opacity(1);
@@ -155,6 +141,7 @@ html, body{
   }
   
   #logo-desktop{
+    position: relative;
     font-weight: 100;
     font-size: 2vmax;
     letter-spacing: 2px;
@@ -201,10 +188,12 @@ html, body{
   
   #header-contact{
     position: relative;
+    display: block;
     font-size: 3vmax;
     color: rgb(158, 0, 0);
     width: 30%;
-    left: 35%;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     margin-bottom: 110px;
     margin-top: 100px;
@@ -220,24 +209,24 @@ html, body{
     color: rgb(74, 74, 74);
     margin-left: 4%;
     margin-right: 0;
-    top: 180px;
+    margin-top: 180px;
     line-height: 200%;
+    float: left;
   }
   
   .footer-top{
+    position: relative;
     top: 0px;
     margin-top: 100px;
-    padding-bottom: 600px;
   }
   
   #photo1{
     position: relative;
     width: 45%;
-    left: 50%;
     outline: inset rgb(252, 223, 193) 10px;
-    margin-top: 0px;
-    margin-bottom: 40px;
+    margin-top: 50px;
     transform: scale(0.9);
+    float: right;
   }
 
 #photo1:hover{
@@ -245,14 +234,13 @@ html, body{
 }
   
   #photo2{
-    position: absolute;
+    position: relative;
     width: 45%;
-    left: 50%;
+    margin-left: 10%;
     outline: inset rgb(252, 223, 193) 10px;
-    padding: 0px;
     top: 0px;
-    margin-top: 200px;
     transform: scale(0.9);
+    float: right;
   }
 
   #photo2:hover{
@@ -302,10 +290,12 @@ html, body{
   
   #photo3{
     position: relative;
+    display: block;
     width: 60%;
     margin-bottom: 50px;
     margin-top: 120px;
-    left: 22%;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0px;
     transition: 1.5s;
     outline: inset rgb(252, 223, 193) 10px;
@@ -320,7 +310,7 @@ html, body{
     position: relative;
     width: 40%;
     float: left;
-    left: 10%;
+    margin-left: 10%;
     outline: inset rgb(252, 223, 193) 10px;
     transition: 1.5s;
     transform: scale(0.9);
@@ -331,7 +321,7 @@ html, body{
   }
   
   
-  #meals>li{
+  #footer-list>li{
     position: relative;
     font-size: 1.2vmax;
     padding-bottom: 50px;
@@ -366,23 +356,23 @@ html, body{
     background-color: gray;
     background-image: url(background2.jpg);
     background-size: cover;
-    height: 90vmin;
+    height: 100vmin;
   }
   
   #image3{
     background-image: url(background3.jpg);
     background-size: cover;
-    height: 90vmin;
+    height: 100vmin;
   }
   
   #image4{
     background-image: url(background4.jpg);
     background-size: cover;
-    height: 90vmin;
+    height:100vmin;
   }
   
   #button-menu{
-    position: absolute;
+    position: relative;
     left: 14%;
     font-size: 1.4vmax;
     text-align: center;
@@ -391,15 +381,16 @@ html, body{
     padding: 12px;
     padding-left: 30px;
     padding-right: 30px;
-    top: 470px;
+    margin-top: 50px;
     background: linear-gradient(45deg, rgb(252, 223, 193), rgb(193, 124, 53));
     border: outset 7px rgb(252, 223, 193);
     filter:saturate(0.0);
     transition: 0.5s;
+    float: left;
   }
 
   #button-menu:active{
-    margin-top: 55px;
+    top: 5px;
     transition: 0.2s;
   }
 
@@ -418,13 +409,6 @@ html, body{
     transition: 1.5s;
   }
   
-  #map-subtitle{
-    font-size: 1.2vmax;
-    color: rgb(74, 74, 74);
-    margin-top: 20px;
-  }
-  
-  
   #nightday-mode{
     position: absolute;
     z-index: 5;
@@ -441,12 +425,12 @@ html, body{
   #photo1small{
     position: relative;
     width: 40%;
-    left: 5%;
-    top: 1vmin;
+    margin-left: 5%;
+    margin-right: 55%;
     outline: inset rgb(252, 223, 193) 10px;
     transition: 1.5s;
-    display: block;
     transform: scale(0.9);
+    margin-top: 10vmax;
   }
 
   #photo1small:hover{
@@ -456,11 +440,9 @@ html, body{
   #photo2small{
     position: relative;
     width: 40%;
-    left: 25%;
-    top: 6vmin;
+    margin-left: 25%;
     outline: inset rgb(252, 223, 193) 10px;
     transition: 1.5s;
-    display: block;
     transform: scale(0.9);
   }
 
@@ -471,11 +453,9 @@ html, body{
   #photo3small{
     position: relative;
     width: 40%;
-    left: 45%;
-    top: 11vmin;
+    margin-left: 45%;
     outline: inset rgb(252, 223, 193) 10px;
     transition: 1.5s;
-    display: block;
     transform: scale(0.9);
   }
 
@@ -504,4 +484,177 @@ html, body{
     font-size: 1.2vmax;
     line-height: 30px;
   }
-  
+
+
+@media (max-device-width:600px)  {
+
+  .container{
+    border: inset 2vmax rgb(119, 60, 26);
+  }
+
+#navbar{
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+
+.header{
+  font-size: 6vmax;
+  width: 50%;
+}
+
+.alt-header{
+  font-size: 6vmax;
+  width: 50%;
+}
+
+#header-contact{
+  font-size: 6vmax;
+  width: 50%;
+}
+
+.footer{
+    font-size: 2.5vmax;
+    width: 90%;
+    float: none;
+}
+
+.footer-top{
+  float: none;
+}
+
+#footer-list>li{
+  position: relative;
+  font-size: 2.5vmax;
+  padding-bottom: 50px;
+  list-style: none;
+  margin-right: 50px;
+  left: 5%;
+  width: 90%;
+}
+
+#photo1{
+  width: 90%;
+  float: none;
+  margin-left: 5%;
+  margin-right: 5%;
+  transform: scale(1);
+}
+
+#photo2{
+  width: 90%;
+  float: none;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
+  transform: scale(1);
+}
+
+#photo3{
+  width: 90%;
+  float: none;
+  margin-left: 5%;
+  margin-right: 5%;
+  transform: scale(1);
+}
+
+#photo4{
+  width: 90%;
+  float: none;
+  margin-left: 5%;
+  margin-right: 5%;
+  transform: scale(1);
+}
+
+#photo1small{
+  position: relative;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
+  transform: scale(1);
+}
+
+#photo2small{
+  position: relative;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
+  transform: scale(1);
+}
+
+#photo3small{
+  position: relative;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
+  transform: scale(1);
+}
+
+#button-menu{
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  font-size: 2.7vmax;
+  text-align: center;
+  color: white;
+  width: 40%;
+  float: none;
+}
+
+#contact-list{
+  width: 100%;
+  float: none;
+}
+
+#contact-list>li{
+  position: relative;
+  list-style: none;
+  font-size: 2.5vmax;
+  line-height: 70px;
+}
+
+#map{
+  position: relative;
+  display: block;
+  width: 90%;
+  margin-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  border: ridge rgb(252, 223, 193) 10px;
+  transition: 1.5s;
+}
+
+#logo-desktop{
+  font-size: 5vmax;
+  font-weight: 400;
+  margin-left: 10%;
+  top: 40px;
+}
+
+#logo-image{
+  position: relative;
+  width: 8%;
+}
+
+#about-desktop{
+  visibility: hidden;
+}
+
+#menu-desktop{
+  visibility: hidden;
+}
+
+#contact-desktop{
+  visibility: hidden;
+}
+
+#image1, #image1b, #image1c, #image2, #image3, #image4{
+  height: 100vmax;
+}
+
+}
