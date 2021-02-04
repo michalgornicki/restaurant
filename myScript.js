@@ -5,20 +5,17 @@ window.onload = function() {
   document.getElementById("navbar").style.filter="opacity(1)";
 }
 
+document.getElementById("menu-collapse-icon").addEventListener("click", openMenu);
+document.getElementById("menu-collapse-icon-close").addEventListener("click", closeMenu);
+
 function openMenu() {
-  document.getElementById("mobile-sliding-menu").style.filter="opacity(0.8)";
-  document.getElementById("mobile-sliding-menu").style.visibility="visible";
-  document.getElementById("mobile-sliding-menu").style.top="175px";
-  document.getElementById("burger-button").style.filter="opacity(0.0)";
-  document.getElementById("close-button").style.filter="opacity(1)";
+  document.getElementById("menu-collapse").style.filter="opacity(1)";
+  document.getElementById("menu-collapse").style.visibility="visible";
 }
 
 function closeMenu() {
-  document.getElementById("mobile-sliding-menu").style.filter="opacity(0.8)";
-  document.getElementById("mobile-sliding-menu").style.visibility="visible";
-  document.getElementById("mobile-sliding-menu").style.top="-1250px";
-  document.getElementById("burger-button").style.filter="opacity(1)";
-  document.getElementById("close-button").style.filter="opacity(0)";
+  document.getElementById("menu-collapse").style.filter="opacity(0)";
+  document.getElementById("menu-collapse").style.visibility="hidden";
 }
 
 
@@ -54,10 +51,12 @@ function nightMode(){
     document.getElementsByClassName("footer")[1].style.color="rgb(255, 255, 255)";
     document.getElementsByClassName("header")[0].style.color="rgb(252, 223, 193)";
     document.getElementsByClassName("header")[1].style.color="rgb(252, 223, 193)";
+    document.getElementsByClassName("header")[0].style.borderBottom="2px solid rgb(252, 223, 193)";
+    document.getElementsByClassName("header")[1].style.borderBottom="2px solid rgb(252, 223, 193)";
     document.getElementsByClassName("alt-header")[0].style.color="rgb(252, 223, 193)";
-    document.getElementsByClassName("alt-header")[0].style.borderBottom="2px inset rgb(252, 223, 193)";
+    document.getElementsByClassName("alt-header")[0].style.borderBottom="2px solid rgb(252, 223, 193)";
     document.getElementById("header-contact").style.color="rgb(252, 223, 193)";
-    document.getElementById("header-contact").style.borderBottom="2px inset rgb(252, 223, 193)";
+    document.getElementById("header-contact").style.borderBottom="2px solid rgb(252, 223, 193)";
     document.getElementById("meals").style.color="rgb(255, 255, 255)";
     document.getElementById("list-beginning").style.color="rgb(255, 255, 255)";
     document.getElementById("contact-list").style.color="rgb(255, 255, 255)";
@@ -70,7 +69,6 @@ function nightMode(){
     document.getElementById("photo1small").style.outline="inset 10px rgb(154, 133, 110)";
     document.getElementById("photo2small").style.outline="inset 10px rgb(154, 133, 110)";
     document.getElementById("photo3small").style.outline="inset 10px rgb(154, 133, 110)";
-    document.getElementsByClassName("reservation")[0].style.color="rgb(255, 255, 255)";
     document.getElementById("map-subtitle").style.color="rgb(255, 255, 255)";
     document.getElementsByClassName("open-hours")[0].style.borderBottom="2px inset rgb(252, 223, 193)";
     document.getElementsByClassName("brown-font")[0].style.color="rgb(252, 223, 193)";
