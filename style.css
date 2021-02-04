@@ -492,17 +492,18 @@ html, body{
     display: block;
     float: right;
     width: 6vmin;
-    top: 25%;
-    margin-right: 2%;
+    margin-right: 1%;
+    margin-top: 0%;
   }
 
   #menu-collapse-icon-close{
     position: relative;
     display: block;
     clear: both;
-    left: 65%;
-    width: 25%;
-    margin-top: 20%;
+    float: right;
+    width: 6vmin;
+    margin-right: 5%;
+    margin-top: 5%;
   }
 
   #menu-collapse{
@@ -546,6 +547,10 @@ html, body{
   width: 100%;
   margin-left: 0%;
   margin-right: 0%;
+}
+
+#desktop-navbar-elements{
+  width: 80%;
 }
 
 .header{
@@ -682,13 +687,13 @@ html, body{
 #logo-desktop{
   font-size: 5vmax;
   font-weight: 400;
-  margin-left: 10%;
+  margin-left: 12%;
   top: 20px;
 }
 
 #logo-image{
   position: relative;
-  width: 8%;
+  width: 10%;
 }
 
 
@@ -733,12 +738,24 @@ html, body{
 }
 
 #menu-collapse-icon{
-  width: 7vmin;
+  width: 9vmin;
 }
 
 #menu-collapse-icon-close{
-  width: 7vmin;
-  left: 75%;
+  width: 9vmin;
+}
+
+#nightday-mode{
+  position: absolute;
+  z-index: 5;
+  top: 50px;
+  margin-top: 10%;
+  right: 1%;
+  transform: rotate(0deg);
+  display: block;
+  width: 10%;
+  filter: saturate(0) opacity(0.5);
+  transition: 1s;
 }
 
 }
