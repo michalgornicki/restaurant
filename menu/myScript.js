@@ -5,175 +5,18 @@ window.onload = function() {
   document.getElementById("navbar").style.filter="opacity(1)";
 }
 
+document.getElementById("menu-collapse-icon").addEventListener("click", openMenu);
+document.getElementById("menu-collapse-icon-close").addEventListener("click", closeMenu);
+
 function openMenu() {
-  document.getElementById("menu").style.filter="opacity(0.8)";
-  document.getElementById("menu").style.visibility="visible";
-  document.getElementById("menu").style.top="175px";
-  document.getElementById("burger-button").style.filter="opacity(0.0)";
-  document.getElementById("close-button").style.filter="opacity(1)";
+  document.getElementById("menu-collapse").style.filter="opacity(1)";
+  document.getElementById("menu-collapse").style.visibility="visible";
 }
 
 function closeMenu() {
-  document.getElementById("menu").style.filter="opacity(0.8)";
-  document.getElementById("menu").style.visibility="visible";
-  document.getElementById("menu").style.top="-1250px";
-  document.getElementById("burger-button").style.filter="opacity(1)";
-  document.getElementById("close-button").style.filter="opacity(0)";
+  document.getElementById("menu-collapse").style.filter="opacity(0)";
+  document.getElementById("menu-collapse").style.visibility="hidden";
 }
-
-function polish() {
-  document.getElementsByClassName("language")[0].innerHTML="ABOUT US";
-  document.getElementsByClassName("language")[1].innerHTML="CONTACT/RESERVATION";
-  document.getElementsByClassName("language")[2].innerHTML="ABOUT US";
-  document.getElementsByClassName("language")[3].innerHTML="CONTACT/RESERVATION";
-  document.getElementsByClassName("language")[4].innerHTML="null";
-  document.getElementsByClassName("language")[5].innerHTML="null";
-  document.getElementsByClassName("language")[6].innerHTML="null";
-  document.getElementsByClassName("language")[7].innerHTML="null";
-  document.getElementsByClassName("language")[8].innerHTML="null";
-  document.getElementsByClassName("language")[9].innerHTML="null";
-  document.getElementsByClassName("language")[10].innerHTML="null";
-  document.getElementsByClassName("language")[11].innerHTML="null";
-  document.getElementsByClassName("language")[12].innerHTML="null";
-  document.getElementsByClassName("language")[13].innerHTML="null";
-  document.getElementsByClassName("language")[14].innerHTML="null";
-  document.getElementsByClassName("language")[15].innerHTML="null";
-  document.getElementsByClassName("language")[16].innerHTML="null";
-  document.getElementsByClassName("language")[17].innerHTML="null";
-  document.getElementsByClassName("language")[18].innerHTML="null";
-  document.getElementsByClassName("language")[19].innerHTML="null";
-  document.getElementsByClassName("language")[20].innerHTML="null";
-  document.getElementsByClassName("language")[21].innerHTML="null";
-  document.getElementsByClassName("language")[22].innerHTML="null";
-  document.getElementsByClassName("language")[23].innerHTML="null";
-  document.getElementsByClassName("language")[24].innerHTML="null";
-  document.getElementsByClassName("language")[25].innerHTML="null";
-  document.getElementsByClassName("language")[26].innerHTML="null";
-  document.getElementsByClassName("language")[27].innerHTML="null";
-  document.getElementsByClassName("language")[28].innerHTML="null";
-  document.getElementsByClassName("language")[29].innerHTML="null";
-  document.getElementsByClassName("language")[30].innerHTML="null";
-  document.getElementsByClassName("language")[31].innerHTML="null";
-  document.getElementsByClassName("language")[32].innerHTML="null";
-  document.getElementsByClassName("language")[33].innerHTML="null";
-  document.getElementsByClassName("language")[34].innerHTML="null";
-  document.getElementsByClassName("language")[35].innerHTML="null";
-  document.getElementsByClassName("language")[36].innerHTML="null";
-  document.getElementsByClassName("language")[37].innerHTML="null";
-  document.getElementsByClassName("language")[38].innerHTML="null";
-  document.getElementsByClassName("language")[39].innerHTML="null";
-  document.getElementsByClassName("language")[40].innerHTML="null";
-  document.getElementsByClassName("language")[41].innerHTML="null";
-  document.getElementsByClassName("language")[42].innerHTML="null";
-  document.getElementsByClassName("language")[43].innerHTML="null";
-  document.getElementById("polish").style.backgroundColor="rgb(252, 223, 193, 0.5)";
-  document.getElementById("english").style.backgroundColor="rgb(252, 223, 193, 0.0)";
-  document.getElementById("french").style.backgroundColor="rgb(252, 223, 193, 0.0)";
-  closeMenu()
-}
-
-function english() {
-  document.getElementsByClassName("language")[0].innerHTML="ABOUT US";
-  document.getElementsByClassName("language")[1].innerHTML="CONTACT/RESERVATION";
-  document.getElementsByClassName("language")[2].innerHTML="ABOUT US";
-  document.getElementsByClassName("language")[3].innerHTML="CONTACT/RESERVATION";
-  document.getElementsByClassName("language")[4].innerHTML="null";
-  document.getElementsByClassName("language")[5].innerHTML="null";
-  document.getElementsByClassName("language")[6].innerHTML="null";
-  document.getElementsByClassName("language")[7].innerHTML="null";
-  document.getElementsByClassName("language")[8].innerHTML="null";
-  document.getElementsByClassName("language")[9].innerHTML="null";
-  document.getElementsByClassName("language")[10].innerHTML="null";
-  document.getElementsByClassName("language")[11].innerHTML="null";
-  document.getElementsByClassName("language")[12].innerHTML="null";
-  document.getElementsByClassName("language")[13].innerHTML="null";
-  document.getElementsByClassName("language")[14].innerHTML="null";
-  document.getElementsByClassName("language")[15].innerHTML="null";
-  document.getElementsByClassName("language")[16].innerHTML="null";
-  document.getElementsByClassName("language")[17].innerHTML="null";
-  document.getElementsByClassName("language")[18].innerHTML="null";
-  document.getElementsByClassName("language")[19].innerHTML="null";
-  document.getElementsByClassName("language")[20].innerHTML="null";
-  document.getElementsByClassName("language")[21].innerHTML="null";
-  document.getElementsByClassName("language")[22].innerHTML="null";
-  document.getElementsByClassName("language")[23].innerHTML="null";
-  document.getElementsByClassName("language")[24].innerHTML="null";
-  document.getElementsByClassName("language")[25].innerHTML="null";
-  document.getElementsByClassName("language")[26].innerHTML="null";
-  document.getElementsByClassName("language")[27].innerHTML="null";
-  document.getElementsByClassName("language")[28].innerHTML="null";
-  document.getElementsByClassName("language")[29].innerHTML="null";
-  document.getElementsByClassName("language")[30].innerHTML="null";
-  document.getElementsByClassName("language")[31].innerHTML="null";
-  document.getElementsByClassName("language")[32].innerHTML="null";
-  document.getElementsByClassName("language")[33].innerHTML="null";
-  document.getElementsByClassName("language")[34].innerHTML="null";
-  document.getElementsByClassName("language")[35].innerHTML="null";
-  document.getElementsByClassName("language")[36].innerHTML="null";
-  document.getElementsByClassName("language")[37].innerHTML="null";
-  document.getElementsByClassName("language")[38].innerHTML="null";
-  document.getElementsByClassName("language")[39].innerHTML="null";
-  document.getElementsByClassName("language")[40].innerHTML="null";
-  document.getElementsByClassName("language")[41].innerHTML="null";
-  document.getElementsByClassName("language")[42].innerHTML="null";
-  document.getElementsByClassName("language")[43].innerHTML="null";
-  document.getElementById("polish").style.backgroundColor="rgb(252, 223, 193, 0.0)";
-  document.getElementById("english").style.backgroundColor="rgb(252, 223, 193, 0.5)";
-  document.getElementById("french").style.backgroundColor="rgb(252, 223, 193, 0.0)";
-  closeMenu()
-}
-
-function french() {
-  document.getElementsByClassName("language")[0].innerHTML="ABOUT US";
-  document.getElementsByClassName("language")[1].innerHTML="CONTACT/RESERVATION";
-  document.getElementsByClassName("language")[2].innerHTML="ABOUT US";
-  document.getElementsByClassName("language")[3].innerHTML="CONTACT/RESERVATION";
-  document.getElementsByClassName("language")[4].innerHTML="null";
-  document.getElementsByClassName("language")[5].innerHTML="null";
-  document.getElementsByClassName("language")[6].innerHTML="null";
-  document.getElementsByClassName("language")[7].innerHTML="null";
-  document.getElementsByClassName("language")[8].innerHTML="null";
-  document.getElementsByClassName("language")[9].innerHTML="null";
-  document.getElementsByClassName("language")[10].innerHTML="null";
-  document.getElementsByClassName("language")[11].innerHTML="null";
-  document.getElementsByClassName("language")[12].innerHTML="null";
-  document.getElementsByClassName("language")[13].innerHTML="null";
-  document.getElementsByClassName("language")[14].innerHTML="null";
-  document.getElementsByClassName("language")[15].innerHTML="null";
-  document.getElementsByClassName("language")[16].innerHTML="null";
-  document.getElementsByClassName("language")[17].innerHTML="null";
-  document.getElementsByClassName("language")[18].innerHTML="null";
-  document.getElementsByClassName("language")[19].innerHTML="null";
-  document.getElementsByClassName("language")[20].innerHTML="null";
-  document.getElementsByClassName("language")[21].innerHTML="null";
-  document.getElementsByClassName("language")[22].innerHTML="null";
-  document.getElementsByClassName("language")[23].innerHTML="null";
-  document.getElementsByClassName("language")[24].innerHTML="null";
-  document.getElementsByClassName("language")[25].innerHTML="null";
-  document.getElementsByClassName("language")[26].innerHTML="null";
-  document.getElementsByClassName("language")[27].innerHTML="null";
-  document.getElementsByClassName("language")[28].innerHTML="null";
-  document.getElementsByClassName("language")[29].innerHTML="null";
-  document.getElementsByClassName("language")[30].innerHTML="null";
-  document.getElementsByClassName("language")[31].innerHTML="null";
-  document.getElementsByClassName("language")[32].innerHTML="null";
-  document.getElementsByClassName("language")[33].innerHTML="null";
-  document.getElementsByClassName("language")[34].innerHTML="null";
-  document.getElementsByClassName("language")[35].innerHTML="null";
-  document.getElementsByClassName("language")[36].innerHTML="null";
-  document.getElementsByClassName("language")[37].innerHTML="null";
-  document.getElementsByClassName("language")[38].innerHTML="null";
-  document.getElementsByClassName("language")[39].innerHTML="null";
-  document.getElementsByClassName("language")[40].innerHTML="null";
-  document.getElementsByClassName("language")[41].innerHTML="null";
-  document.getElementsByClassName("language")[42].innerHTML="null";
-  document.getElementsByClassName("language")[43].innerHTML="null";
-  document.getElementById("polish").style.backgroundColor="rgb(252, 223, 193, 0.0)";
-  document.getElementById("english").style.backgroundColor="rgb(252, 223, 193, 0.0)";
-  document.getElementById("french").style.backgroundColor="rgb(252, 223, 193, 0.5)";
-  closeMenu()
-}
-
 
 function fadeNavbar() {
   if (document.body.scrollTop > 1850 || document.documentElement.scrollTop > 1850) {

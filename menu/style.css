@@ -25,6 +25,7 @@ body, html{
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
+  border: inset 5vmax rgb(119, 60, 26);
 }
 
   #navbar{
@@ -137,11 +138,13 @@ body, html{
     font-size: 1.2vmax;
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     list-style: none;
-    bottom: 1%;
     z-index: 3;
-    width: 100%;
+    width: 90%;
+    bottom: 5%;
     display: block;
     color: white;
+    margin: 0;
+    padding: 0;
   }
 
   #desktop-navbar-elements li{
@@ -149,6 +152,7 @@ body, html{
   }
 
   #logo-desktop{
+    position: relative;
     font-weight: 100;
     font-size: 2vmax;
     letter-spacing: 2px;
@@ -308,6 +312,7 @@ body, html{
     background-image: url(background2.jpg);
     background-size: cover;
     height: 900px;
+    border: none;
   }
 
   #image4{
@@ -411,7 +416,7 @@ body, html{
   #menu-item{
     position: relative;
     padding-bottom: 25px;
-    font-size: 25px;
+    font-size: 1.3vmax;
     width: 60%;
     left: 20%;
   }
@@ -455,7 +460,6 @@ body, html{
   padding-top: 100px;
   padding-bottom: 100px;
   box-shadow: 0px -21px 50px 0px rgba(0,0,0,1);
-  border: inset 5vmax rgb(119, 60, 26);
 }
 
 #container2{  
@@ -467,24 +471,288 @@ body, html{
   height: auto;
   padding-top: 100px;
   padding-bottom: 200px;
-  border: inset 5vmax rgb(119, 60, 26);
+}
+
+#container3{  
+  position: relative;
+  background-color: rgb(255, 245, 235);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: auto;
+  padding-top: 100px;
+  padding-bottom: 200px;
 }
 
 #left{
   display: inline-block;
   border-bottom: 1px rgb(179, 179, 179) inset;
   width: 85%;
-  font-size: 1.3vmax;
 }
 
 #right{
    float: right;
    margin-right: 10px;
    color: rgb(233, 169, 0);
-   font-size: 1.3vmax;
 }
 
 #menu-list{
   list-style: none;
 }
 
+#menu-collapse-icon{
+  position: relative;
+  display: block;
+  float: right;
+  width: 6vmin;
+  margin-right: 1%;
+  margin-top: 0.5%;
+  padding: 10px;
+  background-color: rgba(187, 148, 108, 0.0);
+  border: 2px solid rgba(187, 148, 108, 1);
+  transition: 1s;
+}
+
+#menu-collapse-icon:hover{
+ background-color: rgba(187, 148, 108, 1);
+}
+
+#menu-collapse-icon-close{
+  position: relative;
+  display: block;
+  clear: both;
+  float: right;
+  width: 6vmin;
+  margin-right: 5%;
+  margin-top: 5%;
+  padding: 10px;
+  background-color: rgba(187, 148, 108, 0.0);
+  border: 2px solid rgba(187, 148, 108, 1);
+  transition: 1s;
+}
+
+#menu-collapse-icon-close:hover{
+  background-color: rgba(187, 148, 108, 1);
+}
+
+#menu-collapse{
+  position: absolute;
+  display: block;
+  right: 0px;
+  top: 0px;
+  background-color: black;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 20vmin;
+  height: 45vmin;
+  filter: opacity(0);
+  visibility: hidden;
+  transition: 0.6s;
+  line-height: 8vmin;
+  z-index: 2;
+}
+
+#menu-collapse ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 100px;
+  margin-left: 5%;
+  width: 90%;
+}
+
+#menu-collapse li{
+  border-bottom: solid 1px rgb(189, 189, 189);
+}
+
+@media (max-device-width:600px)  {
+
+  .container{
+    border: inset 2vmax rgb(119, 60, 26);
+  }
+  
+  #navbar{
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    height: 18vmin;
+  }
+  
+  #desktop-navbar-elements{
+    width: 80%;
+  }
+  
+  .header{
+    font-size: 6vmax;
+    width: 50%;
+  }
+  
+  .alt-header{
+    font-size: 6vmax;
+    width: 50%;
+  }
+  
+  #header-contact{
+    font-size: 6vmax;
+    width: 50%;
+  }
+  
+  .footer{
+      font-size: 2.5vmax;
+      width: 90%;
+      float: none;
+  }
+  
+  .footer-top{
+    float: none;
+  }
+  
+  #footer-list>li{
+    position: relative;
+    font-size: 2.5vmax;
+    padding-bottom: 50px;
+    list-style: none;
+    margin-right: 50px;
+    left: 5%;
+    width: 90%;
+  }
+  
+  .photo1{
+    width: 90%;
+    float: none;
+    margin-left: 5%;
+    margin-right: 5%;
+    transform: scale(1);
+  }
+  
+  .photo2{
+    width: 90%;
+    float: none;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    transform: scale(1);
+  }
+  
+  .photo3{
+    width: 90%;
+    float: none;
+    margin-left: 5%;
+    margin-right: 5%;
+    transform: scale(1);
+  }
+  
+  #photo4{
+    width: 90%;
+    float: none;
+    margin-left: 5%;
+    margin-right: 5%;
+    transform: scale(1);
+  }
+  
+  #logo-desktop{
+    font-size: 5vmax;
+    font-weight: 400;
+    margin-left: 12%;
+    top: 20px;
+  }
+  
+  #logo-image{
+    position: relative;
+    width: 10%;
+  }
+  
+  #image1, #image1b, #image1c, #image2, #image3, #image4{
+    height: 100vmax;
+  }
+  
+  #about-desktop, #menu-desktop, #contact-desktop{
+    visibility: hidden;
+  }
+  
+  #menu-collapse{
+    top: 18vmin;
+    width: 60vmin;
+    height: 110vmin;
+    font-size: 4vmax;
+    line-height: 20vmin;
+  }
+  
+  #menu-collapse ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 15vmax;
+    margin-left: 10%;
+    width: 90%;
+  }
+  
+  #menu-collapse li{
+    border-bottom: solid 1px rgb(189, 189, 189);
+  }
+  
+  #menu-collapse-icon{
+    width: 12vmin;
+  }
+  
+  #menu-collapse-icon-close{
+    width: 12vmin;
+  }
+  
+  #nightday-mode{
+    position: absolute;
+    z-index: 5;
+    top: 50px;
+    margin-top: 15%;
+    right: 1%;
+    transform: rotate(0deg);
+    display: block;
+    width: 10%;
+    filter: saturate(0) opacity(0.5);
+    transition: 1s;
+  }
+
+  #button-menu1{
+    position: absolute;
+    left: 15%;
+    font-size: 2.5vmax;
+    text-align: center;
+    font-size: 4vmax;
+    color: white;
+    width: 25%;
+    top: 140vmin;
+    float: left;
+  }
+
+  #button-menu2{
+    position: absolute;
+    right: 15%;
+    font-size: 2.5vmax;
+    text-align: center;
+    font-size: 4vmax;
+    color: white;
+    width: 25%;
+    top: 140vmin;
+    float: right;
+  }
+
+  .menu-header{
+    position: relative;
+    top: 0px;
+    width: 700px;
+    font-size: 6vmax;
+    padding-bottom: 80px;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+
+  #menu-item{
+    position: relative;
+    padding-bottom: 25px;
+    font-size: 2.2vmax;
+    width: 80%;
+    left: 10%;
+  }
+
+}
