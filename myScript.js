@@ -57,10 +57,8 @@ function nightMode(){
     document.getElementsByClassName("alt-header")[0].style.borderBottom="2px solid rgb(252, 223, 193)";
     document.getElementById("header-contact").style.color="rgb(252, 223, 193)";
     document.getElementById("header-contact").style.borderBottom="2px solid rgb(252, 223, 193)";
-    document.getElementById("meals").style.color="rgb(255, 255, 255)";
-    document.getElementById("list-beginning").style.color="rgb(255, 255, 255)";
+    document.getElementById("footer-list").style.color="rgb(255, 255, 255)";
     document.getElementById("contact-list").style.color="rgb(255, 255, 255)";
-    document.getElementById("map-subtitle").style.color="rgb(255, 255, 255)";
     document.getElementById("photo1").style.outline="inset 10px rgb(154, 133, 110)";
     document.getElementById("photo2").style.outline="inset 10px rgb(154, 133, 110)";
     document.getElementById("photo3").style.outline="inset 10px rgb(154, 133, 110)";
@@ -95,10 +93,8 @@ function nightMode(){
     document.getElementsByClassName("alt-header")[0].style.borderBottom="2px inset rgb(158, 0, 0)";
     document.getElementById("header-contact").style.color="rgb(158, 0, 0)";
     document.getElementById("header-contact").style.borderBottom="2px inset rgb(158, 0, 0)";
-    document.getElementById("meals").style.color="rgb(74, 74, 74)";
-    document.getElementById("list-beginning").style.color="rgb(74, 74, 74)";
+    document.getElementById("footer-list").style.color="rgb(74, 74, 74)";
     document.getElementById("contact-list").style.color="rgb(74, 74, 74)";
-    document.getElementById("map-subtitle").style.color="rgb(74, 74, 74)";
     document.getElementById("photo1").style.outline="inset 10px rgb(252, 223, 193)";
     document.getElementById("photo2").style.outline="inset 10px rgb(252, 223, 193)";
     document.getElementById("photo3").style.outline="inset 10px rgb(252, 223, 193)";
@@ -117,5 +113,3 @@ function nightMode(){
   }, 1500);
   }
 }
-
-
