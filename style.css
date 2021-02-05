@@ -632,23 +632,24 @@ html, body{
 }
 
 .header{
-  font-size: 6vmax;
+  font-size: 7vmax;
   width: 50%;
 }
 
 .alt-header{
-  font-size: 6vmax;
+  font-size: 7vmax;
   width: 50%;
 }
 
 #header-contact{
-  font-size: 6vmax;
+  font-size: 7vmax;
   width: 50%;
 }
 
 .footer{
-    font-size: 2.5vmax;
+    font-size: 3.2vmax;
     width: 90%;
+    margin-bottom: 5vmax;
     float: none;
 }
 
@@ -658,12 +659,12 @@ html, body{
 
 #footer-list>li{
   position: relative;
-  font-size: 2.5vmax;
+  font-size: 3.2vmax;
   padding-bottom: 50px;
   list-style: none;
   margin-right: 50px;
   left: 5%;
-  width: 90%;
+  width: 100%;
 }
 
 #photo1{
@@ -747,7 +748,7 @@ html, body{
 #contact-list>li{
   position: relative;
   list-style: none;
-  font-size: 2.5vmax;
+  font-size: 3.2vmax;
   line-height: 70px;
 }
 
