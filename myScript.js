@@ -34,9 +34,6 @@ window.onscroll = function() {
   fadePhoto1()
 }
 
-document.getElementById("container1").style.backgroundColor="rgb(255, 245, 235)";
-
-
 function nightMode(){
   if (document.getElementById("container1").style.backgroundColor==="rgb(255, 245, 235)") {
   const darkMode =
