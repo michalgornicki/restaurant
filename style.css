@@ -4,16 +4,18 @@ html, body{
   scroll-behavior: smooth;
   margin-left: 0px;
   overflow-x: hidden;
-  background-color: rgb(80, 46, 15);
+  background-color: rgb(255, 237, 214);
   }
+
+  @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
   
   .content{
     position: absolute;
     font-weight: 100;
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     width: 100%;
     left: 0%;
-    filter: brightness(0);
+    filter: brightness(1);
     top: 0%;
     margin-top: 0%;
   }
@@ -26,36 +28,40 @@ html, body{
   
   #navbar{
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.4);
-    width: 90%;
+    background-color:rgb(252, 223, 193);
+    width: 100%;
     top: 0px;
     left: 0px;
     z-index: 2;
-    margin-left: 5%;
-    margin-right: 5%;
-    border-bottom: 2px solid rgb(230, 230, 230);
-    height: 13vmin;
+    height: 15vmin;
     box-shadow: 0px 0px 0px rgb(228, 149, 2);
     transition: 2s;
+    color: rgb(187, 126, 46);
+    font-family: 'Quicksand', sans-serif;
   }
 
-  #navbar:hover{
-    background: none;
-    background-color: rgba(0, 0, 0, 1);
-    transition: 1.5s;
-  }
-
-  
   a{
     text-decoration: none;
-    color: white;
+    color: rgb(187, 126, 46);
   }
   
   #footer-list{
     position: relative;
-    transition: 1.3s;
+    transition: 1s;
     padding-top: 50px;
     color: rgb(70, 69, 69);
+    width: 45%;
+    display: inline-block;
+  }
+
+  
+  #footer-list>li{
+    position: relative;
+    font-size: 1.2vmax;
+    font-weight: 400;
+    padding-bottom: 50px;
+    list-style: none;
+    margin-right: 50px;
   }
   
   #list-beginning{
@@ -76,7 +82,8 @@ html, body{
     margin-bottom: 5%;
     padding-bottom: 250px;
     overflow: hidden;
-    background: linear-gradient(to top, rgb(255, 210, 151),rgb(255, 228, 193));
+    background-color: rgb(255, 226, 189);
+    border: 1px solid rgb(190, 108, 0);
   }
 
   
@@ -126,35 +133,32 @@ html, body{
     z-index: 0;
   }
   
-  #desktop-navbar-elements{
+  #navbar-elements{
     position: absolute;
-    font-size: 1.2vmax;
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5vmax;
+    line-height: 15vmin;
     list-style: none;
     z-index: 3;
     width: 90%;
     bottom: 5%;
     display: block;
-    color: white;
     margin: 0;
     padding: 0;
   }
   
-  #desktop-navbar-elements li{
+  #navbar-elements li{
     display: inline;
   }
   
   #logo-desktop{
     position: relative;
     font-weight: 100;
-    font-size: 2vmax;
-    letter-spacing: 2px;
+    font-size: 4vmin;
     padding: 15px;
-    font-weight: 400;
+    font-weight: 700;
     margin-left: 10%;
     border-radius: 10px;
-    color: rgb(255, 255, 255);
-    text-shadow: 3px 3px 12px black;
+    color:rgb(151, 114, 78);
     cursor: default;
     display: block;
   }
@@ -178,43 +182,36 @@ html, body{
   .header{
     position: relative;
     font-size: 3vmax;
+    font-weight: 700;
     color: rgb(158, 0, 0);
-    text-align: center;
-    width: 25%;
-    top: 120px;
-    border-bottom: 1px solid rgb(158, 0, 0);
+    text-align: left;
+    width: 35%;
+    border-bottom: 3px solid rgb(158, 0, 0);
+    margin-top: 4%;
+    margin-left: 2%;
   }
   
   .header-top{
     top: 50px;
   }
   
-  #header-contact{
+  .footer-and-image-wrapper{
     position: relative;
-    display: block;
-    font-size: 3vmax;
-    color: rgb(158, 0, 0);
-    width: 30%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    margin-bottom: 110px;
-    margin-top: 100px;
-    border-bottom: 1px solid rgb(158, 0, 0);
   }
-  
   
   .footer{
     font-size: 1.3vmax;
+    font-weight: 400;
     width: 40%;
     position: relative;
     text-align: justify;
     color: rgb(74, 74, 74);
     margin-left: 4%;
-    margin-right: 0;
-    margin-top: 180px;
+    margin-right: 4%;
+    margin-top: 4%;
     line-height: 200%;
-    float: left;
+    display: inline-block;
+    vertical-align: top;
   }
   
   .footer-top{
@@ -224,144 +221,51 @@ html, body{
     float: none;
   }
   
-  #photo1{
+  .photo-large{
     position: relative;
     width: 50%;
-    margin-top: 50px;
     transform: scale(1);
-    float: right;
+    display: inline-block;
+    border-radius: 3vmin;
   }
-  
-  #photo2{
-    position: absolute;
-    width: 50%;
-    right: 0px;
-    top: 0px;
-    transform: scale(1);
-    transition: 1.5s;
-    margin-top: 100px;
-  }
-  
+
   #about-desktop{
     position: relative;
-    border-bottom: 0px inset rgb(0, 0, 0);
+    border-bottom: 0px inset rgb(255, 255, 255);
     cursor: default;
     margin-left: 30%;
-    padding-bottom: 7px;
-    transition: 0.5s;
+    transition: 0.2s;
   }
   
   #about-desktop:hover{
-    border-bottom: 3px inset rgb(187, 148, 108);
+    border-bottom: 4px inset rgb(255, 255, 255);
     padding-bottom: 0px;
-    transition: 0.5s;
+    transition: 0.2s;
   }
   
   #menu-desktop{
-    border-bottom: 0px inset rgb(0, 0, 0);
+    border-bottom: 0px inset rgb(255, 255, 255);
     margin-left: 3%;
-    padding-bottom: 7px;
-    transition: 0.5s;
+    transition: 0.2s;
   }
   
   #menu-desktop:hover{
-    border-bottom: 3px inset rgb(187, 148, 108);
+    border-bottom: 4px inset rgb(255, 255, 255);
     padding-bottom: 0px;
-    transition: 0.5s;
+    transition: 0.2s;
   }
   
   #contact-desktop{
-    border-bottom: 0px inset rgb(0, 0, 0);
+    border-bottom: 0px inset rgb(255, 255, 255);
     margin-left: 3%;
-    padding-bottom: 7px;
-    transition: 0.5s;
+    transition: 0.2s;
   }
   
   #contact-desktop:hover{
-    border-bottom: 3px inset rgb(187, 148, 108);
+    border-bottom: 4px inset rgb(255, 255, 255);
     padding-bottom: 0px;
-    transition: 0.5s;
+    transition: 0.2s;
   }
-  
-  #photo3{
-    position: relative;
-    display: block;
-    width: 65%;
-    margin-bottom: 50px;
-    margin-top: 120px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0px;
-    transition: 1.5s;
-    transform: scale(1);
-  }
-
-  #photo4{
-    position: relative;
-    width: 40%;
-    float: left;
-    margin-left: 10%;
-    outline: inset rgb(252, 223, 193) 10px;
-    transition: 1.5s;
-    transform: scale(1);
-  }
-
-  #photo5{
-    position: relative;
-    width: 33.3333%;
-    transition: 1.5s;
-    float: left;
-    transform: scale(1);
-    z-index: 1;
-  }
-
-  #photo6{
-    position: relative;
-    width: 33.3333%;
-    transition: 1.5s;
-    float: left;
-    transform: scale(1);
-    z-index: 1;
-  }
-
-  #photo7{
-    position: relative;
-    width: 33.3333%;
-    transition: 1.5s;
-    float: left;
-    transform: scale(1);
-    z-index: 1;
-  }
-
-  #footer-list>li{
-    position: relative;
-    font-size: 1.2vmax;
-    padding-bottom: 50px;
-    list-style: none;
-    margin-right: 50px;
-    left: 5%;
-    width: 70%;
-  }
-  
-  #list-beginning{
-    position: relative;
-    font-size: 1.4vmax;
-    list-style: none;
-    padding-top: 50px;
-    color: rgb(70, 69, 69);
-  }
-  
-  .alt-header{
-    position: relative;
-    font-size: 50px;
-    color: rgb(158, 0, 0);
-    text-align: center;
-    border-bottom: 1px solid rgb(158, 0, 0);
-    left: 0%;
-    width: 30%;
-    margin-top: 50px;
-  }
-  
   
   #image2{
     position: relative;
@@ -383,40 +287,32 @@ html, body{
     height:100vmin;
   }
   
-  #button-menu{
+  #button{
     position: relative;
     font-size: 1.4vmax;
     text-align: center;
     color: white;
-    width: 12%;
+    width: fit-content;
     padding: 12px;
     padding-left: 30px;
     padding-right: 30px;
-    background: linear-gradient(45deg, rgb(252, 223, 193), rgb(193, 124, 53));
-    border: outset 7px rgb(252, 223, 193);
-    filter:saturate(0.0);
-    transition: 0.5s;
-    margin-top: 7vmin;
-    margin-left: 15%;
+    background-color: rgb(243, 176, 104);
+    cursor: pointer;
+    margin-top: 12vmin;
+    left: 50%;
+    transform: translate(-50%, 0%);
   }
 
-  #button-menu:active{
-    top: 5px;
-    transition: 0.2s;
-  }
 
-  #button-menu:hover{
-    filter:saturate(1);
-    transition: 0.5s;
+  #button:hover{
+    background-color: rgb(209, 145, 77);
   }
   
   #map{
     position: relative;
-    width: 50%;
+    width: 95%;
     margin-top: 200px;
-    margin-left: 25%;
-    margin-right: 25%;
-    border: ridge rgb(252, 223, 193) 10px;
+    left: 2.5%;
     transition: 1.5s;
   }
   
@@ -432,52 +328,29 @@ html, body{
     filter: saturate(0) opacity(0.5);
     transition: 1s;
   }
-  
-  #photo1small{
-    position: relative;
-    width: 40%;
-    margin-left: 5%;
-    margin-right: 55%;
-    outline: inset rgb(252, 223, 193) 10px;
-    transition: 1s;
-    transform: scale(1);
-    margin-top: 10vmax;
-  }
 
-  #photo1small:hover{
-    transform: scale(1);
+  .photo-small-wrapper{
+    width: 95%;
+    position: relative;
+    height: fit-content;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 8vmin;
   }
   
-  #photo2small{
+  .photo-small{
     position: relative;
-    width: 40%;
-    margin-left: 25%;
-    outline: inset rgb(252, 223, 193) 10px;
+    width: 31%;
+    margin: 1%;
     transition: 1s;
     transform: scale(1);
-  }
-
-  #photo2small:hover{
-    transform: scale(1);
-  }
-  
-  #photo3small{
-    position: relative;
-    width: 40%;
-    margin-left: 45%;
-    outline: inset rgb(252, 223, 193) 10px;
-    transition: 1s;
-    transform: scale(1);
-  }
-
-  #photo3small:hover{
-    transform: scale(1);
+    float: left;
+    border-radius: 3vmin;
   }
 
   .open-hours{
-    border-bottom: 2px inset rgb(189, 85, 0);
-    width: 10vmax;
-    margin-bottom: 10px;
+    margin-bottom: 1vmin;
+    font-weight: 600;
   }
   
   .brown-font{
@@ -486,7 +359,11 @@ html, body{
 
   #contact-list{
     width: 40%;
-    float: right;
+    display: inline-block;
+    top: 0%;
+    margin-top: 5vmin;
+    vertical-align: top;
+    font-weight: 400;
   }
   
   #contact-list>li{
@@ -500,35 +377,26 @@ html, body{
     position: relative;
     display: block;
     float: right;
-    width: 6vmin;
-    margin-right: 1%;
-    margin-top: 0.5%;
-    padding: 10px;
-    background-color: rgba(187, 148, 108, 0.0);
-    border: 2px solid rgba(187, 148, 108, 1);
-    transition: 1s;
+    height: 7vmin;
+    padding: 4vmin;
+    background-color: rgba(187, 148, 108, 1);
   }
 
  #menu-collapse-icon:hover{
-   background-color: rgba(187, 148, 108, 1);
+   background-color: rgb(122, 95, 67);
  }
 
   #menu-collapse-icon-close{
     position: relative;
     display: block;
-    clear: both;
     float: right;
-    width: 6vmin;
-    margin-right: 5%;
-    margin-top: 5%;
-    padding: 10px;
-    background-color: rgba(187, 148, 108, 0.0);
-    border: 2px solid rgba(187, 148, 108, 1);
-    transition: 1s;
+    height: 7vmin;
+    padding: 4vmin;
+    background-color: rgba(187, 148, 108, 1);
   }
 
   #menu-collapse-icon-close:hover{
-    background-color: rgba(187, 148, 108, 1);
+    background-color: rgb(122, 95, 67);
   }
 
   #menu-collapse{
@@ -538,8 +406,7 @@ html, body{
     top: 0px;
     background-color: black;
     color: white;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    width: 20vmin;
+    width: fit-content;
     height: 45vmin;
     filter: opacity(0);
     visibility: hidden;
@@ -574,10 +441,6 @@ html, body{
     animation: 1s scrollDown infinite alternate;
   }
 
-  @keyframes scrollDown{
-    0% {margin-top: 0vmin;}
-    100% {margin-top: 2vmin;}
-  }
 
 
 @media (max-device-width:600px)  {
@@ -593,7 +456,7 @@ html, body{
   height: 18vmin;
 }
 
-#desktop-navbar-elements{
+#navbar-elements{
   width: 80%;
 }
 
@@ -607,10 +470,6 @@ html, body{
   width: 50%;
 }
 
-#header-contact{
-  font-size: 7vmax;
-  width: 50%;
-}
 
 .footer{
     font-size: 3.2vmax;
@@ -693,7 +552,7 @@ html, body{
   transform: scale(1);
 }
 
-#button-menu{
+#button{
   position: relative;
   display: block;
   margin-left: auto;
