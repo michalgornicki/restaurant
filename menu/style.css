@@ -5,6 +5,7 @@ body, html {
   background-color: rgb(255, 237, 214);
   scroll-behavior: smooth;
   overflow-x: hidden;
+  user-select: none;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
@@ -17,6 +18,15 @@ body, html {
   filter: brightness(1);
   top: 0%;
   margin-top: 0%;
+}
+
+.up{
+  position: fixed;
+  width: 8vmin;
+  z-index: 4;
+  right: 2%;
+  top: 85%;
+  filter: drop-shadow(0px 0px 1px black);
 }
 
 .container {
@@ -44,6 +54,8 @@ body, html {
   transition: 2s;
   color: rgb(187, 126, 46);
   font-family: 'Quicksand', sans-serif;
+  filter: drop-shadow(0px 0px 5px black);
+  
 }
 
 a {
@@ -127,13 +139,13 @@ a {
   position: relative;
   font-weight: 100;
   font-size: 4vmin;
-  padding: 15px;
   font-weight: 700;
   margin-left: 10%;
   border-radius: 10px;
   color: rgb(151, 114, 78);
   cursor: default;
   display: block;
+  cursor: pointer;
 }
 
 #logo-image {
@@ -178,39 +190,41 @@ a {
   display: inline-block;
 }
 
-#about-desktop{
+#about-desktop {
   position: relative;
   border-bottom: 0px inset rgb(255, 255, 255);
   cursor: default;
+  transition: 0.2s;
+  cursor: pointer;
   margin-left: 30%;
-  transition: 0.2s;
+  display: block;
 }
 
-#about-desktop:hover{
+#about-desktop:hover {
   border-bottom: 4px inset rgb(255, 255, 255);
   padding-bottom: 0px;
   transition: 0.2s;
 }
 
-#menu-desktop{
+#menu-desktop {
   border-bottom: 0px inset rgb(255, 255, 255);
   margin-left: 3%;
   transition: 0.2s;
 }
 
-#menu-desktop:hover{
+#menu-desktop:hover {
   border-bottom: 4px inset rgb(255, 255, 255);
   padding-bottom: 0px;
   transition: 0.2s;
 }
 
-#contact-desktop{
+#contact-desktop {
   border-bottom: 0px inset rgb(255, 255, 255);
   margin-left: 3%;
   transition: 0.2s;
 }
 
-#contact-desktop:hover{
+#contact-desktop:hover {
   border-bottom: 4px inset rgb(255, 255, 255);
   padding-bottom: 0px;
   transition: 0.2s;
@@ -314,11 +328,12 @@ a {
 
 #menu-collapse-icon {
   position: relative;
-  display: block;
+  display: none;
   float: right;
   height: 7vmin;
   padding: 4vmin;
   background-color: rgba(187, 148, 108, 1);
+  cursor: pointer;
 }
 
 #menu-collapse-icon:hover {
@@ -332,57 +347,82 @@ a {
   height: 7vmin;
   padding: 4vmin;
   background-color: rgba(187, 148, 108, 1);
+  cursor: pointer;
 }
 
 #menu-collapse-icon-close:hover {
   background-color: rgb(122, 95, 67);
 }
 
-#menu-collapse {
+
+#menu-collapse{
   position: absolute;
   display: block;
   right: 0px;
   top: 0px;
-  background-color: black;
+  background-color:rgb(255, 226, 189);
   color: white;
-  width: fit-content;
-  height: 45vmin;
+  width: 30vmin;
+  height: fit-content;
   filter: opacity(0);
   visibility: hidden;
   transition: 0.6s;
-  line-height: 8vmin;
+  line-height: 12vmin;
   z-index: 2;
+  font-size: 3vmin;
 }
 
-#menu-collapse ul {
+#menu-collapse ul{
+  position: relative;
   list-style: none;
   padding: 0;
-  margin: 0;
-  margin-top: 100px;
-  margin-left: 5%;
-  width: 90%;
+  margin-top: 120px;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#menu-collapse li {
-  border-bottom: solid 1px rgb(189, 189, 189);
+#menu-collapse li{
+  position: relative;
+  width: 100%;
+  display: block;
+  text-align: center;
 }
 
-@media (max-device-width:600px) {
-  .container {
-    border: inset 2vmax rgb(119, 60, 26);
+@media only screen and (max-device-width:1000px), (max-width:1000px) {
+  li#about-desktop, li#menu-desktop, li#contact-desktop {
+    display: none;
   }
+  #menu-collapse-icon {
+    display: block;
+  }
+}
+
+@media only screen and (max-device-width:600px), (max-width:600px) {
   #navbar {
     width: 100%;
     margin-left: 0%;
     margin-right: 0%;
-    height: 18vmin;
+    height: 15vmin;
+    filter: drop-shadow(0px 0px 15px black);
+  }
+  #navbar-elements {
+    width: 80%;
+    line-height: 15vmin;
+    height: 15vmin;
   }
 
   #logo-desktop {
-    font-size: 5vmax;
-    font-weight: 400;
-    margin-left: 12%;
-    top: 20px;
+    position: relative;
+    font-weight: 100;
+    font-size: 8vmin;
+    font-weight: 700;
+    margin-left: 10%;
+    border-radius: 10px;
+    color: rgb(151, 114, 78);
+    cursor: default;
+    display: block;
+    cursor: pointer;
   }
   #logo-image {
     position: relative;
@@ -393,7 +433,6 @@ a {
     visibility: hidden;
   }
   #menu-collapse {
-    top: 18vmin;
     width: 60vmin;
     height: 110vmin;
     font-size: 4vmax;
@@ -410,46 +449,7 @@ a {
   #menu-collapse li {
     border-bottom: solid 1px rgb(189, 189, 189);
   }
-  #menu-collapse-icon {
-    width: 12vmin;
-  }
-  #menu-collapse-icon-close {
-    width: 12vmin;
-  }
-  #nightday-mode {
-    position: absolute;
-    z-index: 5;
-    top: 50px;
-    margin-top: 15%;
-    right: 1%;
-    transform: rotate(0deg);
-    display: block;
-    width: 10%;
-    filter: saturate(0) opacity(0.5);
-    transition: 1s;
-  }
-  #button-menu1 {
-    position: absolute;
-    left: 15%;
-    font-size: 2.5vmax;
-    text-align: center;
-    font-size: 4vmax;
-    color: white;
-    width: 25%;
-    top: 80vmax;
-    float: left;
-  }
-  #button-menu2 {
-    position: absolute;
-    right: 15%;
-    font-size: 2.5vmax;
-    text-align: center;
-    font-size: 4vmax;
-    color: white;
-    width: 25%;
-    top: 80vmax;
-    float: right;
-  }
+
   .menu-header {
     position: relative;
     top: 0px;
@@ -467,4 +467,38 @@ a {
     width: 100%;
     left: 0%;
   }
+
+.button{
+  font-size: 6vmin;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.photo {
+  position: relative;
+  width: 90%;
+  margin-bottom: 1.5%;
+  margin-top: 5%;
+  top: -20px;
+  left: 5%;
+  border-radius: 3vmin;
+  display: inline-block;
+}
+
+.container {
+  width: 100%;
+  left: 0%;
+}
+
+.up {
+  position: fixed;
+  width: 14vmin;
+  z-index: 4;
+  right: 4%;
+  top: 88%;
+  filter: drop-shadow(0px 0px 1px black);
+}
+
+
 }
