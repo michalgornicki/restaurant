@@ -47,3 +47,18 @@ function drinks() {
   document.getElementsByClassName("container")[1].style.display="none";
   document.getElementsByClassName("container")[2].style.display="block";
 }
+
+function zoomImage() {
+  console.log(this.event.target)
+  this.event.target.style.left="0%";
+  this.event.target.style.transform="scale(1.4)";
+  this.event.target.style.zIndex="10";
+  this.event.target.style.borderRadius ="3vmin";
+}
+
+function closeZoomImage() {
+  console.log(this.event.target)
+  this.event.target.style.transform="scale(1)";
+  this.event.target.style.zIndex="1";
+  this.event.target.style.borderRadius ="0vmin";
+}

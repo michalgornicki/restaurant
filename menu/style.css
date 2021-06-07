@@ -138,7 +138,7 @@ a {
 #logo-desktop {
   position: relative;
   font-weight: 100;
-  font-size: 4vmin;
+  font-size: 5vmin;
   font-weight: 700;
   margin-left: 10%;
   border-radius: 10px;
@@ -146,6 +146,7 @@ a {
   cursor: default;
   display: block;
   cursor: pointer;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 #logo-image {
@@ -188,6 +189,8 @@ a {
   left: 0%;
   border-radius: 3vmin;
   display: inline-block;
+  transition: 0.4s;
+
 }
 
 #about-desktop {
@@ -282,6 +285,7 @@ a {
   left: 50%;
   transform: translate(-50%, 0%);
   color: rgb(187, 126, 46);
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 #menu-item {
@@ -310,16 +314,19 @@ a {
   width: 128px;
 }
 
-#left {
+.left {
   display: inline-block;
   border-bottom: 1px rgb(179, 179, 179) inset;
   width: 85%;
+  font-size: 3vmax;
 }
 
-#right {
+.right {
   float: right;
   margin-right: 10px;
   color: rgb(187, 126, 46);
+  font-size: 2.5vmax;
+
 }
 
 #menu-list {
@@ -389,6 +396,21 @@ a {
   text-align: center;
 }
 
+.left {
+  display: inline-block;
+  border-bottom: 1px rgb(179, 179, 179) inset;
+  width: 85%;
+  font-size: 3vmin;
+}
+
+.right {
+  float: right;
+  margin-right: 10px;
+  color: rgb(187, 126, 46);
+  font-size: 3vmin;
+
+}
+
 @media only screen and (max-device-width:1000px), (max-width:1000px) {
   li#about-desktop, li#menu-desktop, li#contact-desktop {
     display: none;
@@ -454,7 +476,7 @@ a {
     position: relative;
     top: 0px;
     width: 700px;
-    font-size: 6vmax;
+    font-size: 5vmax;
     padding-bottom: 80px;
     text-align: center;
     left: 50%;
