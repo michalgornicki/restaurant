@@ -1,0 +1,614 @@
+@import url('https://fonts.googleapis.com/css2?family=News+Cycle&display=swap');
+
+
+
+html,
+body {
+  width: 100%;
+  top: 0px;
+  scroll-behavior: smooth;
+  margin-left: 0px;
+  overflow-x: hidden;
+  background-color: rgb(255, 237, 214);
+  user-select: none;
+  font-family: 'News Cycle', sans-serif;
+}
+
+
+
+.content {
+  position: absolute;
+  font-weight: 100;
+  width: 100%;
+  left: 0%;
+  filter: brightness(1);
+  top: 0%;
+  margin-top: 0%;
+  
+
+}
+
+.up {
+  position: fixed;
+  width: 8vmin;
+  z-index: 4;
+  right: 2%;
+  top: 85%;
+  filter: drop-shadow(0px 0px 1px black);
+}
+
+.container-image-gap {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#navbar {
+  position: absolute;
+  background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0));
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  height: 15vmin;
+  box-shadow: 0px 0px 0px rgb(228, 149, 2);
+  transition: 2s;
+  color: rgb(187, 126, 46);
+  filter: drop-shadow(0px 0px 5px black);
+}
+
+a {
+  text-decoration: none;
+}
+
+#footer-list {
+  position: relative;
+  transition: 1s;
+  padding-top: 50px;
+  float: left;
+  margin-right: 5%;
+  color: rgb(70, 69, 69);
+  width: 40%;
+  display: block;
+  font-size: 3.3vmin;
+  font-weight: 400;
+  text-align: center;
+  list-style: none;
+  line-height: 6vmin;
+}
+
+.container {
+  width: 100%;
+  left: 0%;
+  position: relative;
+  height: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding-bottom: 50px;
+  overflow: hidden;
+  background-color: rgb(255, 226, 189);
+}
+
+#image1 {
+  position: relative;
+  height: 100vmin;
+  width: 100%;
+  background-size: cover;
+  background-image: url(background1d.jpg);
+  z-index: 2;
+  animation: 15s fadeOut forwards infinite;
+  animation-delay: 5s;
+}
+
+@keyframes fadeOut {
+  0% {
+    filter: opacity(1);
+  }
+  33% {
+    filter: opacity(0);
+  }
+  66% {
+    filter: opacity(0);
+  }
+  100% {
+    filter: opacity(1);
+  }
+}
+
+#image1b {
+  position: absolute;
+  height: 100vmin;
+  width: 100%;
+  top: 0px;
+  filter: opacity(1);
+  background-size: cover;
+  background-image: url(background1b.jpg);
+  background-color: rgb(190, 0, 0);
+  animation: 15s fadeOut forwards infinite;
+  animation-delay: 10s;
+  z-index: 1;
+}
+
+#image1c {
+  position: absolute;
+  height: 100vmin;
+  width: 100%;
+  top: 0px;
+  filter: opacity(1);
+  background-size: cover;
+  background-image: url(background1c.jpg);
+  background-color: rgb(190, 0, 0);
+  animation: 15s fadeOut forwards infinite;
+  animation-delay: 15s;
+  z-index: 0;
+}
+
+#navbar-elements {
+  position: absolute;
+  font-size: 1.5vmax;
+  line-height: 15vmin;
+  list-style: none;
+  z-index: 3;
+  width: 90%;
+  bottom: 5%;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar-elements li {
+  display: inline;
+}
+
+#logo-desktop {
+  position: relative;
+  font-weight: 100;
+  font-size: 5vmin;
+  font-weight: 700;
+  margin-left: 10%;
+  border-radius: 10px;
+  color: rgb(151, 114, 78);
+  cursor: default;
+  display: block;
+  cursor: pointer;
+}
+
+.header {
+  position: relative;
+  font-size: 3vmax;
+  font-weight: 700;
+  color: rgb(158, 0, 0);
+  text-align: center;
+  width: 38%;
+  margin-top: 4%;
+  margin-left: 2%;
+}
+
+.header-top {
+  top: 50px;
+}
+
+.footer-and-image-wrapper {
+  position: relative;
+}
+
+.footer {
+  font-size: 3.3vmin;
+  font-weight: 400;
+  width: 38%;
+  position: relative;
+  text-align: center;
+  color: rgb(74, 74, 74);
+  margin-left: 2%;
+  margin-right: 4%;
+  margin-top: 4%;
+  line-height: 200%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.footer-top {
+  position: relative;
+  top: 0px;
+  margin-top: 100px;
+  float: none;
+}
+
+.photo-large {
+  position: relative;
+  width: 50%;
+  transform: scale(1);
+  display: inline-block;
+  border-radius: 3vmin;
+}
+
+#about-desktop {
+  position: relative;
+  color: rgb(187, 126, 46);
+  cursor: default;
+  transition: 0.2s;
+  cursor: pointer;
+  margin-left: 30%;
+  display: block;
+}
+
+#about-desktop:hover {
+  color:rgb(233, 173, 94);
+  padding-bottom: 0px;
+  transition: 0.2s;
+}
+
+#menu-desktop {
+  color: rgb(187, 126, 46);
+  margin-left: 3%;
+  transition: 0.2s;
+}
+
+#menu-desktop:hover {
+  color:rgb(233, 173, 94);
+  padding-bottom: 0px;
+  transition: 0.2s;
+}
+
+#contact-desktop {
+  color: rgb(187, 126, 46);
+  margin-left: 3%;
+  transition: 0.2s;
+}
+
+#contact-desktop:hover {
+  color:rgb(233, 173, 94);
+  padding-bottom: 0px;
+  transition: 0.2s;
+}
+
+#image2 {
+  position: relative;
+  background-color: gray;
+  background-image: url(background2.jpg);
+  background-size: cover;
+  height: 100vmin;
+}
+
+#image3 {
+  background-image: url(background3.jpg);
+  background-size: cover;
+  height: 100vmin;
+}
+
+#image4 {
+  background-image: url(background4.jpg);
+  background-size: cover;
+  height: 100vmin;
+}
+
+#button {
+  position: relative;
+  font-size: 1.4vmax;
+  text-align: center;
+  color: white;
+  width: fit-content;
+  padding: 12px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: rgb(243, 176, 104);
+  cursor: pointer;
+  margin-top: 12vmin;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+#button:hover {
+  background-color: rgb(209, 145, 77);
+}
+
+#map {
+  position: relative;
+  width: 95%;
+  margin-top: 200px;
+  left: 2.5%;
+  transition: 1.5s;
+}
+
+#nightday-mode {
+  position: absolute;
+  z-index: 5;
+  top: 50px;
+  margin-top: 8%;
+  right: 5%;
+  transform: rotate(0deg);
+  display: block;
+  width: 3%;
+  filter: saturate(0) opacity(0.5);
+  transition: 1s;
+}
+
+.photo-small-wrapper {
+  width: 95%;
+  position: relative;
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8vmin;
+}
+
+.photo-small {
+  position: relative;
+  width: 31%;
+  margin: 1%;
+  transition: 1s;
+  transform: scale(1);
+  float: left;
+  border-radius: 3vmin;
+}
+
+.open-hours {
+  margin-bottom: 1vmin;
+  font-weight: 600;
+}
+
+.brown-font {
+  color: rgb(189, 85, 0);
+}
+
+#contact-list {
+  width: 40%;
+  display: inline-block;
+  top: 0%;
+  margin-top: 5vmin;
+  vertical-align: top;
+  font-weight: 400;
+  font-size: 3vmin;
+  line-height: 40px;
+  list-style: none;
+  text-align: center;
+}
+
+#menu-collapse-icon {
+  position: relative;
+  display: none;
+  float: right;
+  height: 7vmin;
+  padding: 4vmin;
+  background-color: rgba(187, 148, 108, 1);
+  cursor: pointer;
+}
+
+#menu-collapse-icon:hover {
+  background-color: rgb(122, 95, 67);
+}
+
+#menu-collapse-icon-close {
+  position: relative;
+  display: block;
+  float: right;
+  height: 7vmin;
+  padding: 4vmin;
+  background-color: rgba(187, 148, 108, 1);
+  cursor: pointer;
+}
+
+#menu-collapse-icon-close:hover {
+  background-color: rgb(122, 95, 67);
+}
+
+#menu-collapse {
+  position: absolute;
+  display: block;
+  right: 0px;
+  top: 0px;
+  background-color: rgb(255, 226, 189);
+  color: white;
+  width: 30vmin;
+  height: fit-content;
+  filter: opacity(0);
+  visibility: hidden;
+  transition: 0.6s;
+  line-height: 12vmin;
+  z-index: 2;
+  font-size: 3vmin;
+}
+
+#menu-collapse ul {
+  position: relative;
+  list-style: none;
+  padding: 0;
+  margin-top: 120px;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#menu-collapse li {
+  position: relative;
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+.scroll-down {
+  position: absolute;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 5%;
+  top: 80vmin;
+  z-index: 2;
+  animation: 1s scrollDown infinite alternate;
+}
+
+@media only screen and (max-device-width: 1000px), (max-width: 1000px) {
+  li#about-desktop,
+  li#menu-desktop,
+  li#contact-desktop {
+    display: none;
+  }
+  #menu-collapse-icon {
+    display: block;
+  }
+}
+
+@media only screen and (max-device-width: 600px), (max-width: 600px) {
+  #navbar {
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    height: 15vmin;
+    filter: drop-shadow(0px 0px 15px black);
+  }
+  #navbar-elements {
+    width: 80%;
+    line-height: 15vmin;
+    height: 15vmin;
+  }
+  .header {
+    font-size: 7vmax;
+    width: 80%;
+    left: 10%;
+  }
+  .footer {
+    font-size: 3.2vmax;
+    width: 95%;
+    margin-bottom: 5vmax;
+    float: none;
+  }
+  #button {
+    position: relative;
+    display: block;
+    font-size: 2.7vmax;
+    text-align: center;
+    color: white;
+    width: 50%;
+    float: none;
+  }
+  #contact-list {
+    width: 100%;
+    float: none;
+  }
+  #map {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100vmin;
+    left: 0%;
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 1.5s;
+  }
+  #logo-desktop {
+    position: relative;
+    font-weight: 100;
+    font-size: 8vmin;
+    font-weight: 700;
+    margin-left: 10%;
+    border-radius: 10px;
+    color: rgb(151, 114, 78);
+    cursor: default;
+    display: block;
+    cursor: pointer;
+  }
+  #image1,
+  #image1b,
+  #image1c,
+  #image2,
+  #image3,
+  #image4 {
+    height: 100vmax;
+  }
+  #menu-collapse {
+    width: 60vmin;
+    height: 110vmin;
+    font-size: 4vmax;
+    line-height: 20vmin;
+  }
+  #menu-collapse ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 15vmax;
+    margin-left: 10%;
+    width: 90%;
+  }
+  #menu-collapse li {
+    border-bottom: solid 1px rgb(189, 189, 189);
+  }
+  .scroll-down {
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    width: 12%;
+    top: 140vmin;
+  }
+
+  .photo-large {
+    position: relative;
+    width: 90%;
+    left: 5%;
+    transform: scale(1);
+    display: inline-block;
+    border-radius: 3vmin;
+  }
+
+  .photo-small-wrapper {
+    width: 100%;
+  }
+
+  .photo-small {
+    position: relative;
+    width: 90%;
+    left: 5%;
+    margin-bottom: 1%;
+    transition: 1s;
+    transform: scale(1);
+    float: left;
+    border-radius: 3vmin;
+  }
+
+  .container {
+    width: 100%;
+    left: 0%;
+  }
+
+  #footer-list {
+    position: relative;
+    transition: 1s;
+    padding-top: 50px;
+    color: rgb(70, 69, 69);
+    width: 95%;
+    display: inline-block;
+    font-size: 6vmin;
+    font-weight: 400;
+  }
+
+  #footer-list > li {
+    list-style: none;
+    margin-right: 50px;
+  }
+
+  #contact-list {
+    width: 90%;
+    display: inline-block;
+    top: 0%;
+    margin-top: 8vmin;
+    vertical-align: top;
+    font-weight: 400;
+    font-size: 5vmin;
+    line-height: 6vmin;
+    list-style: none;
+  }
+
+  .up {
+    position: fixed;
+    width: 14vmin;
+    z-index: 4;
+    right: 4%;
+    top: 88%;
+    filter: drop-shadow(0px 0px 1px black);
+  }
+}

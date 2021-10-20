@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <!-- BOOTSTRAP CDN AND CUSTOMISED CSS LINKS -->
+
+
+  <link rel="stylesheet" href="style.css">
+  <link href='http://fonts.googleapis.com/css?family=Andada&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <meta charset="utf-8">
+</head>
+
+<body>
+
+  <a href="#navbar">
+    <img src="up.png" alt="" class="up">
+  </a>
+
+  <div id="navbar" data-aos="fade-down" data-aos-duration="2500"> <a href="../index.html">
+
+
+      <ul id="navbar-elements">
+        <a href="../index.html">
+          <li id="logo-desktop">Royal Cookery</li>
+        </a>
+        <a href="../index.html">
+          <li id="about-desktop">O nas</li>
+        </a>
+        <a href="../index.html#transparent-container-long">
+          <li id="contact-desktop">Kontakt i rezerwacja</li>
+        </a>
+        <li id="menu-desktop">Menu</li>
+      </ul>
+
+      <img src="menu.png" id="menu-collapse-icon">
+
+      <div id="menu-collapse">
+        <img src="close.png" id="menu-collapse-icon-close">
+        <ul>
+          <a href="../index.html">
+            <li>O nas</li>
+          </a>
+          <a href="#header-contact">
+            <li>Kontakt</li>
+          </a>
+          <a href="menu/index.html">
+            <li>Menu</li>
+          </a>
+        </ul>
+      </div>
+
+  </div>
+
+  <div class="content">
+
+    <div>
+
+      <div id="image1"></div>
+      <div id="image1b"></div>
+      <div id="image1c"></div>
+
+    </div>
+
+    <div class="button-wrapper">
+      <div class="button" onclick="dinners()">Dania główne</div>
+      <div class="button" onclick="vegetarian()">Dania wegetariańskie</div>
+      <div class="button" onclick="drinks()">Napoje i alkohole</div>
+    </div>
+
+    <div class="container">
+
+      <div class="menu">
+
+        <div class="photo-wrapper">
+          <img class="photo" onmouseover="zoomImage()" onmouseout="closeZoomImage()" src="1.jpg" loading="lazy" alt="">
+          <img class="photo" onmouseover="zoomImage()" onmouseout="closeZoomImage()" src="2.jpg" loading="lazy" alt="" >
+          <img class="photo" onmouseover="zoomImage()" onmouseout="closeZoomImage()" src="3.jpg" loading="lazy" alt="" >
+          </div>
+
+        <div class="menu-header language">Dania główne</div>
+
+        <ul id="menu-list">
+          <li id="menu-item">
+            <div class="left">Polędwica wieprzowa</div>
+            <div class="right">45 zł</div>
+          </li>
+          <li id="menu-item">
+            <div class="left">Polędwica wołowa</div>
+            <div class="right">62 zł</div>
+          </li>
+          <li id="menu-item">
+            <div class="left">Pierś z kurczaka z wolnego wybiegu</div>
+            <div class="right">43 zł</div>
+          </li>
+          <li id="menu-item">
+            <div class="left">Okoń morski</div>
+            <div class="right">52 zł</div>
+          </li>
+        </ul>
+        <div class="menu-header language">Desery</div>
+        <ul id="menu-list">
+          <li id="menu-item">
+            <div class="left">Placki ziemniaczane</div>
+            <div class="right">18 zł</div>
+          </li>
+          <li id="menu-item">
+            <div class="left">Sałatka z owoców sezonowych</div>
+            <div class="right">16 zł</div>
+          </li>
+          <li id="menu-item">
+            <div class="left">Szarlotka (200g)</div>
+            <div class="right">20 zł</div>
+          </li>
+          <li id="menu-item">
+            <div class="left">Gofer z owocami</div>
+            <div class="right">14 zł</div>
+          </li>
+        </ul>
+        <div class="menu-header language">Sałaty</div>
+        <ul id="menu-list">
+          <li id="menu-item">
+            <div class="left">Surówka z selera z rodzynkami</div>
+            <div class="right">11 zł</div>
+          </li>
+          <li id="menu-item">
+            <div class="left">Surówka z czerwonej kapusty</div>
+            <div class="right">9 zł</div>
+          </li>
+          <li id="menu-item">
+            <div class="left">Buraczki na ciepło</div>
+            <div class="right">8 zł</div>
+          </li>
+          <li id="menu-item">
+            <div class="left">Mizeria ze śmietaną</div>
+            <div class="right">7 zł</div>
+          </li>
+        </ul>
+        <div class="menu-header language">Zupy</div>
+        <ul id="menu-list">
+          <li id="menu-item">
+            <div class="left">Rosół z kury z makaronem i pietruszką</div>
+            <div class="right">12 zł</div>
+          </li>
+          <li id="menu-item">
+            <div class="left">Pomidorowa z makaronem lub z ryżem</div>
+            <div class="right">11 zł</div>
+          </li>
+          <li id="menu-item">
+            <div class="left">Barszcz czerwony z uszkami</div>
+            <div class="right">9 zł</div>
+          </li>
+          <li id="menu-item">
+            <div class="left">Zupa grzybowa</div>
+            <div class="right">12 zł</div>
+          </li>
+        </ul>
+
+      
+
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="photo-wrapper">
+        <img class="photo" onmouseover="zoomImage()" onmouseout="closeZoomImage()" src="7.jpg" loading="lazy" alt="" >
+        <img class="photo" onmouseover="zoomImage()" onmouseout="closeZoomImage()" src="8.jpg" loading="lazy" alt="" >
+        <img class="photo" onmouseover="zoomImage()" onmouseout="closeZoomImage()" src="9.jpg" loading="lazy" alt="" >
+        </div>
+
+      <div class="menu">
+        <div class="menu-header language">Wegetariańskie dania główne</div>
+        <ul id="menu-list">
+          <li id="menu-item">
+            <div class="left">Kotlety z soczewicy i batatów</div>
+            <div class="right">45 zł</div>
+          </li>
+          <li id="menu-item">
+            <div class="left">Warzywne currie z dynią</div>
+            <div class="right">62 zł</div>
+          </li>
+          <li id="menu-item">
+            <div class="left">Kotlety jajeczne</div>
+            <div class="right">43 zł</div>
+          </li>
+          <li id="menu-item">
+            <div class="left">"Boczek" z bakłażana</div>
+            <div class="right">52 zł</div>
+          </li>
+        </ul>
+
+        <div class="menu-header language">Wegetariańskie zupy</div>
+        <ul id="menu-list">
+          <li id="menu-item">
+            <div class="left">Wegetariański rosół</div>
+            <div class="right">12 zł</div>
+          </li>
+          <li id="menu-item">
+            <div class="left">Pomidorowa z makaronem lub z ryżem</div>
+            <div class="right">11 zł</div>
+          </li>
+          <li id="menu-item">
+            <div class="left">Zupa krem z pieczonej papryki</div>
+            <div class="right">9 zł</div>
+          </li>
+          <li id="menu-item">
+            <div class="left">Krem z cukinii z fetą</div>
+            <div class="right">12 zł</div>
+          </li>
+        </ul>
+        
+
+      </div>
+    </div>
+
+
+    <div class="container">
+
+      <div class="photo-wrapper">
+        <img class="photo" onmouseover="zoomImage()" onmouseout="closeZoomImage()" src="4.jpg" loading="lazy" alt="" >
+        <img class="photo" onmouseover="zoomImage()" onmouseout="closeZoomImage()" src="5.jpg" loading="lazy" alt="" >
+        <img class="photo" onmouseover="zoomImage()" onmouseout="closeZoomImage()" src="6.jpg" loading="lazy" alt="" >
+        </div>
+
+      <div class="menu">
+
+        <div class="menu-header language">Napoje gorące</div>
+        <ul id="menu-list">
+          <li id="menu-item">
+            <div class="left">Herbata czarna</div>
+            <div class="right">6 zł</div>
+          </li>
+          <li id="menu-item">
+            <div class="left">Herbata owocowa</div>
+            <div class="right">6 zł</div>
+          </li>
+          <li id="menu-item">
+            <div class="left">Espresso</div>
+            <div class="right">8 zł</div>
+          </li>
+          <li id="menu-item">
+            <div class="left">Latte</div>
+            <div class="right">9 zł</div>
+          </li>
+          <li id="menu-item">
+            <div class="left">Kakao</div>
+            <div class="right">8 zł</div>
+          </li>
+        </ul>
+        <div class="menu-header language">Napoje zimne</div>
+        <ul id="menu-list">
+          <li id="menu-item">
+            <div class="left">Sok ze świeżych pomarańczy</div>
+            <div class="right">6 zł</div>
+          </li>
+          <li id="menu-item">
+            <div class="left">Sok ze świeżych jabłek</div>
+            <div class="right">6 zł</div>
+          </li>
+          <li id="menu-item">
+            <div class="left">Kompot rabarbarowy</div>
+            <div class="right">7 zł</div>
+          </li>
+          <li id="menu-item">
+            <div class="left">Woda mineralna</div>
+            <div class="right">4 zł</div>
+          </li>
+        </ul>
+        <div class="menu-header language">Piwo</div>
+        <ul id="menu-list">
+          <li id="menu-item">
+            <div class="left">Pils niemiecki</div>
+            <div class="right">11 zł</div>
+          </li>
+          <li id="menu-item">
+            <div class="left">Żubr</div>
+            <div class="right">8 zł</div>
+          </li>
+          <li id="menu-item">
+            <div class="left">Desperados</div>
+            <div class="right">9 zł</div>
+          </li>
+          <li id="menu-item">
+            <div class="left">Redd's</div>
+            <div class="right">9 zł</div>
+          </li>
+          <li id="menu-item">
+            <div class="left">Heineken 0%</div>
+            <div class="right">8 zł</div>
+          </li>
+        </ul>
+        <div class="menu-header language">Drinki</div>
+        <ul id="menu-list">
+          <li id="menu-item">
+            <div class="left">MOJITO</div>
+            <div class="right">15 zł</div>
+          </li>
+          <li id="menu-item">
+            <div class="left">CAIPIRINHA</div>
+            <div class="right">16 zł</div>
+          </li>
+          <li id="menu-item">
+            <div class="left">TEQUILA SUNRISE</div>
+            <div class="right">20 zł</div>
+          </li>
+          <li id="menu-item">
+            <div class="left">PINK SPRITZ</div>
+            <div class="right">11 zł</div>
+          </li>
+        </ul>
+        <div class="menu-header language">Wina</div>
+        <ul id="menu-list">
+          <li id="menu-item">
+            <div class="left">AMERICAN WINGS CHARDONNAY</div>
+            <div class="right">65 zł</div>
+          </li>
+          <li id="menu-item">
+            <div class="left">Hollókői Mihály </div>
+            <div class="right">35 zł</div>
+          </li>
+          <li id="menu-item">
+            <div class="left">Sauvignon Blanc</div>
+            <div class="right">62 zł</div>
+          </li>
+          <li id="menu-item">
+            <div class="left">Hangács Bikavér Superior</div>
+            <div class="right">44 zł</div>
+          </li>
+        </ul>
+        
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- JQUERY, POPPER.JS AND JS BOOTSTRAP CDNS -->
+  <script src="myScript.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="../spotlight.bundle.js"></script>
+  <script>
+    AOS.init({
+      offset: 0,
+      once: false,
+    });
+  </script>
+</body>
+
+</html>
